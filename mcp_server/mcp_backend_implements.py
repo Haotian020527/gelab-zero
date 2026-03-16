@@ -16,8 +16,17 @@ import yaml
 from PIL import Image
 import io
 import base64
+import logging
+from typing import Any, Dict, Mapping, Optional
 
 from megfile import smart_open, smart_remove
+
+from mcp_server.cockpit_router import CockpitRouter
+from mcp_server.mcp_spotify_tool import register_spotify_tool_to_router
+
+
+logger = logging.getLogger(__name__)
+_COCKPIT_ROUTER: Optional[CockpitRouter] = None
 
 # TODO: to manage the usage status of all devices, and meke an option to display only available devices
 def get_device_list():
@@ -217,6 +226,119 @@ def execute_task(
 
 
     return result
+
+
+def _gui_fallback_executor(task: str, context: Mapping[str, Any]) -> Dict[str, Any]:
+    """
+    Keep original GUI chain as fallback executor.
+    This function is intentionally thin and delegates to existing execute_task.
+    """
+
+    if "device_id" not in context:
+        raise ValueError("Router fallback requires context['device_id'].")
+
+    return execute_task(
+        device_id=str(context["device_id"]),
+        task=task,
+        reset_environment=bool(context.get("reset_environment", True)),
+        max_steps=int(context.get("max_steps", 20)),
+        enable_intermediate_logs=bool(context.get("enable_intermediate_logs", False)),
+        enable_intermediate_image_caption=bool(context.get("enable_intermediate_image_caption", False)),
+        enable_intermediate_screenshots=bool(context.get("enable_intermediate_screenshots", False)),
+        enable_final_screenshot=bool(context.get("enable_final_screenshot", False)),
+        enable_final_image_caption=bool(context.get("enable_final_image_caption", False)),
+        reply_mode=str(context.get("reply_mode", "pass_to_client")),
+        session_id=context.get("session_id"),
+        reply_from_client=context.get("reply_from_client"),
+        extra_info=context.get("extra_info", {}),
+    )
+
+
+def get_or_create_cockpit_router() -> CockpitRouter:
+    global _COCKPIT_ROUTER
+    if _COCKPIT_ROUTER is not None:
+        return _COCKPIT_ROUTER
+
+    router = CockpitRouter(gui_fallback_executor=_gui_fallback_executor, min_match_score=0.60)
+
+    try:
+        registered = register_spotify_tool_to_router(router, strict=False)
+        if registered:
+            logger.info("CockpitRouter: Spotify tool enabled.")
+        else:
+            logger.warning(
+                "CockpitRouter: Spotify tool disabled (missing SPOTIFY_* env vars). "
+                "GUI fallback remains available."
+            )
+    except Exception as exc:  # pragma: no cover - plugin init failure path
+        logger.warning("CockpitRouter: failed to register Spotify tool, fallback only mode. err=%s", exc)
+
+    _COCKPIT_ROUTER = router
+    return _COCKPIT_ROUTER
+
+
+def execute_task_with_cockpit_router(
+    device_id: str,
+    task: Optional[str],
+    max_steps: int = 20,
+    session_id: Optional[str] = None,
+    reply_from_client: Optional[str] = None,
+    reset_environment: bool = True,
+    reply_mode: str = "pass_to_client",
+    enable_intermediate_logs: bool = False,
+    enable_intermediate_image_caption: bool = False,
+    enable_intermediate_screenshots: bool = False,
+    enable_final_screenshot: bool = False,
+    enable_final_image_caption: bool = False,
+    extra_info: Optional[Dict[str, Any]] = None,
+    router_context: Optional[Dict[str, Any]] = None,
+) -> Dict[str, Any]:
+    """
+    Hybrid execution entry:
+    - New task (session_id is None): API-first via CockpitRouter, then GUI fallback if needed.
+    - Continue session (session_id provided): direct GUI execution to preserve original behavior.
+    """
+
+    if task is None and session_id is None:
+        raise ValueError("Either task or session_id must be provided.")
+
+    if task is None and session_id is not None:
+        return execute_task(
+            device_id=device_id,
+            task=None,
+            reset_environment=False,
+            max_steps=max_steps,
+            enable_intermediate_logs=enable_intermediate_logs,
+            enable_intermediate_image_caption=enable_intermediate_image_caption,
+            enable_intermediate_screenshots=enable_intermediate_screenshots,
+            enable_final_screenshot=enable_final_screenshot,
+            enable_final_image_caption=enable_final_image_caption,
+            reply_mode=reply_mode,
+            session_id=session_id,
+            reply_from_client=reply_from_client,
+            extra_info=extra_info or {},
+        )
+
+    # New task: route API-first and fallback to GUI.
+    context: Dict[str, Any] = {
+        "device_id": device_id,
+        "max_steps": max_steps,
+        "session_id": session_id,
+        "reply_from_client": reply_from_client,
+        "reset_environment": reset_environment,
+        "reply_mode": reply_mode,
+        "enable_intermediate_logs": enable_intermediate_logs,
+        "enable_intermediate_image_caption": enable_intermediate_image_caption,
+        "enable_intermediate_screenshots": enable_intermediate_screenshots,
+        "enable_final_screenshot": enable_final_screenshot,
+        "enable_final_image_caption": enable_final_image_caption,
+        "extra_info": extra_info or {},
+    }
+    if router_context:
+        context.update(router_context)
+
+    router = get_or_create_cockpit_router()
+    return router.route(task=task or "", context=context)
 
 
 

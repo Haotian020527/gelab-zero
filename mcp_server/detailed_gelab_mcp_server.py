@@ -18,12 +18,19 @@ from mcp_server.mcp_backend_implements import (
     get_device_list,
     get_screenshot,
     execute_task,
+    execute_task_with_cockpit_router,
 )
+from mcp_server.mcp_spotify_tool import register_spotify_mcp_tool
 
 mcp = FastMCP(name="Gelab-MCP-Server", instructions="""
 This MCP server provides tools to interact with connected mobile devices using a GUI agent.               
               """
             )
+
+try:
+    register_spotify_mcp_tool(mcp)
+except Exception as exc:
+    print(f"[WARN] spotify_play_track not registered: {exc}")
 
 
 @mcp.tool
@@ -160,6 +167,54 @@ Returns:
     )
 
     return return_log
+
+
+@mcp.tool
+def ask_agent_hybrid(
+    device_id: Annotated[str, Field(description="ID of target device.")],
+    task: Annotated[str | None, Field(description="Task to execute. New task will use API-first routing.")],
+    max_steps: Annotated[int, Field(description="Maximum step budget when GUI fallback is needed.")] = 20,
+    session_id: Annotated[str | None, Field(description="Optional previous session id for continue mode.")] = None,
+    reply_from_client: Annotated[str | None, Field(description="Reply to INFO action when continue mode is used.")] = None,
+    spotify_device_id: Annotated[str | None, Field(description="Optional Spotify Connect device id for API tool route.")] = None,
+) -> dict:
+    """
+    Hybrid Cockpit entry:
+    - API-first via CockpitRouter (Cockpit-MCP tools)
+    - GUI fallback on no-match or API failure
+    """
+
+    if task is not None and session_id is not None:
+        raise ValueError("For a new task, session_id must be None.")
+    if task is None and session_id is None:
+        raise ValueError("Either task or session_id must be provided.")
+
+    if task is not None:
+        reset_environment = True
+    else:
+        reset_environment = False
+
+    router_context = {}
+    if spotify_device_id:
+        router_context["spotify_device_id"] = spotify_device_id
+
+    result = execute_task_with_cockpit_router(
+        device_id=device_id,
+        task=task,
+        max_steps=max_steps,
+        session_id=session_id,
+        reply_from_client=reply_from_client,
+        reset_environment=reset_environment,
+        reply_mode="pass_to_client",
+        enable_intermediate_logs=False,
+        enable_intermediate_image_caption=False,
+        enable_intermediate_screenshots=False,
+        enable_final_screenshot=False,
+        enable_final_image_caption=False,
+        extra_info={},
+        router_context=router_context,
+    )
+    return result
 
 
 with open("mcp_server_config.yaml", "r") as f:
