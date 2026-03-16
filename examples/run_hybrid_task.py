@@ -29,16 +29,62 @@ def _load_default_mcp_url() -> str:
 
 
 def _extract_devices(raw: Any) -> List[str]:
+    list_candidate = _extract_list_candidate(raw)
+    if list_candidate is None:
+        raise ValueError(f"Unexpected device response from MCP: {raw!r}")
+    return [str(item) for item in list_candidate if str(item).strip()]
+
+
+def _extract_list_candidate(raw: Any) -> List[Any] | None:
     if isinstance(raw, list):
-        return [str(item) for item in raw if str(item).strip()]
+        return raw
 
     if isinstance(raw, dict):
         for key in ("devices", "data", "result"):
             value = raw.get(key)
             if isinstance(value, list):
-                return [str(item) for item in value if str(item).strip()]
+                return value
+        return None
 
-    raise ValueError(f"Unexpected device response from MCP: {raw!r}")
+    for attr in ("structured_content", "data", "result"):
+        if not hasattr(raw, attr):
+            continue
+        value = getattr(raw, attr)
+        candidate = _extract_list_candidate(value)
+        if candidate is not None:
+            return candidate
+
+    return None
+
+
+def _normalize_tool_result(raw: Any) -> Any:
+    if isinstance(raw, (dict, list, str, int, float, bool)) or raw is None:
+        return raw
+
+    if hasattr(raw, "structured_content"):
+        structured_content = getattr(raw, "structured_content")
+        if isinstance(structured_content, dict):
+            if "result" in structured_content:
+                return structured_content["result"]
+            return structured_content
+
+    if hasattr(raw, "result"):
+        result = getattr(raw, "result")
+        if result is not None:
+            return result
+
+    if hasattr(raw, "data"):
+        data = getattr(raw, "data")
+        if data is not None:
+            return data
+
+    if hasattr(raw, "model_dump"):
+        try:
+            return raw.model_dump()
+        except Exception:
+            pass
+
+    return str(raw)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -113,7 +159,8 @@ async def _run(args: argparse.Namespace) -> int:
         if args.spotify_device_id:
             payload["spotify_device_id"] = args.spotify_device_id
 
-        result = await client.call_tool("ask_agent_hybrid", payload)
+        result_raw = await client.call_tool("ask_agent_hybrid", payload)
+        result = _normalize_tool_result(result_raw)
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return 0
 
