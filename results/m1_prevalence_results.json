@@ -1,0 +1,16 @@
+{
+  "total_events": 200,
+  "total_failures": 102,
+  "boundary_specific_count": 54,
+  "prevalence_pct": 52.94,
+  "c1_passed": true,
+  "label_distribution": {
+    "consistent_pass": 98,
+    "api_preferred": 48,
+    "boundary_specific": 54
+  },
+  "benchmark_stats": {
+    "n_tasks": 20,
+    "replay_determinism_rate": 1.0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "event_id": "46fdc3b1",
+  "task_id": "test",
+  "step_index": 0,
+  "pre_screenshot_path": "",
+  "post_screenshot_path": "",
+  "action": "test_action",
+  "postconditions": [
+    {
+      "subject": "cart",
+      "relation": "contains",
+      "object": "item"
+    }
+  ],
+  "emulator_snapshot_id": "",
+  "label": "boundary_specific",
+  "fault_type": "none",
+  "fault_severity": "none",
+  "timestamp_pre": 0.0,
+  "timestamp_post": 0.0,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": []
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": []
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": []
+  }
+}

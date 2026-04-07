@@ -1,0 +1,53 @@
+{
+  "total_events": 180,
+  "total_failures": 180,
+  "boundary_specific_count": 0,
+  "prevalence_pct": 0.0,
+  "c1_passed": false,
+  "label_distribution": {
+    "partial_fail": 180
+  },
+  "label_percentages": {
+    "partial_fail": 100.0
+  },
+  "by_fault_type": {
+    "stale_observation": {
+      "partial_fail": 60
+    },
+    "phantom_ack": {
+      "partial_fail": 60
+    },
+    "state_rollback": {
+      "partial_fail": 60
+    }
+  },
+  "by_task_prefix": {
+    "msg": {
+      "partial_fail": 27
+    },
+    "set": {
+      "partial_fail": 27
+    },
+    "con": {
+      "partial_fail": 27
+    },
+    "cal": {
+      "partial_fail": 18
+    },
+    "file": {
+      "partial_fail": 18
+    },
+    "alarm": {
+      "partial_fail": 18
+    },
+    "note": {
+      "partial_fail": 18
+    },
+    "gallery": {
+      "partial_fail": 18
+    },
+    "phone": {
+      "partial_fail": 9
+    }
+  }
+}

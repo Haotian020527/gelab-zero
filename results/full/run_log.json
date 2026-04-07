@@ -1,0 +1,1188 @@
+{
+  "stage": "full",
+  "timestamp": "2026-04-05T09:12:53",
+  "n_tasks": 20,
+  "device_id": "192.168.50.174:5555",
+  "events": [
+    {
+      "task_id": "msg_send_001",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "f6e74a9d",
+      "task_id": "msg_send_001",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "61ab80ae",
+      "task_id": "msg_send_001",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "dbb66198",
+      "task_id": "msg_send_001",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d20f7673",
+      "task_id": "msg_send_001",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b2fed3d6",
+      "task_id": "msg_send_001",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c658ff12",
+      "task_id": "msg_send_001",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c9cd2868",
+      "task_id": "msg_send_001",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c0b5fa0f",
+      "task_id": "msg_send_001",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9827f799",
+      "task_id": "msg_send_001",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "msg_read_002",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "d43fce93",
+      "task_id": "msg_read_002",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "17110b90",
+      "task_id": "msg_read_002",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d98714b0",
+      "task_id": "msg_read_002",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c4621df4",
+      "task_id": "msg_read_002",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d2ae0dc9",
+      "task_id": "msg_read_002",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "98a4a6c7",
+      "task_id": "msg_read_002",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "ea723a9e",
+      "task_id": "msg_read_002",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "778ced9d",
+      "task_id": "msg_read_002",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "36d79692",
+      "task_id": "msg_read_002",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "msg_delete_003",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "94d9d31e",
+      "task_id": "msg_delete_003",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b69f5188",
+      "task_id": "msg_delete_003",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4966dafb",
+      "task_id": "msg_delete_003",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "18406db7",
+      "task_id": "msg_delete_003",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0f24ee56",
+      "task_id": "msg_delete_003",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a453701d",
+      "task_id": "msg_delete_003",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "acc30ae0",
+      "task_id": "msg_delete_003",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "8c70cdbb",
+      "task_id": "msg_delete_003",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c82d1e2e",
+      "task_id": "msg_delete_003",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "set_wifi_004",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "daf2a839",
+      "task_id": "set_wifi_004",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "00fb551b",
+      "task_id": "set_wifi_004",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0012248a",
+      "task_id": "set_wifi_004",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b2baa0a5",
+      "task_id": "set_wifi_004",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6355711d",
+      "task_id": "set_wifi_004",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c7e1ca8c",
+      "task_id": "set_wifi_004",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "3cf5802f",
+      "task_id": "set_wifi_004",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "52cba561",
+      "task_id": "set_wifi_004",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0d96c86a",
+      "task_id": "set_wifi_004",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "set_bright_005",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "032d2e24",
+      "task_id": "set_bright_005",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a837aa4a",
+      "task_id": "set_bright_005",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7e7b07ba",
+      "task_id": "set_bright_005",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "5124cbf5",
+      "task_id": "set_bright_005",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9d3a8fc0",
+      "task_id": "set_bright_005",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "29f5b452",
+      "task_id": "set_bright_005",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7846022f",
+      "task_id": "set_bright_005",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "cff37169",
+      "task_id": "set_bright_005",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6614d5b9",
+      "task_id": "set_bright_005",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "set_bluetooth_006",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "ec98e92e",
+      "task_id": "set_bluetooth_006",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2a65244e",
+      "task_id": "set_bluetooth_006",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e910900e",
+      "task_id": "set_bluetooth_006",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e0fa78f8",
+      "task_id": "set_bluetooth_006",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "be3a4d90",
+      "task_id": "set_bluetooth_006",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "72bc96af",
+      "task_id": "set_bluetooth_006",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4a9c1dfe",
+      "task_id": "set_bluetooth_006",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "59efc6a3",
+      "task_id": "set_bluetooth_006",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "82105926",
+      "task_id": "set_bluetooth_006",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "con_add_007",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "3c3e3d8e",
+      "task_id": "con_add_007",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4d7964bd",
+      "task_id": "con_add_007",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "f3fb9f27",
+      "task_id": "con_add_007",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "46f95a70",
+      "task_id": "con_add_007",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9cd4dba3",
+      "task_id": "con_add_007",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "460df22c",
+      "task_id": "con_add_007",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0fb455b8",
+      "task_id": "con_add_007",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "edf2ea0f",
+      "task_id": "con_add_007",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "dd002137",
+      "task_id": "con_add_007",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "con_edit_008",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "182a5b71",
+      "task_id": "con_edit_008",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e732ba52",
+      "task_id": "con_edit_008",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b6c0f9c5",
+      "task_id": "con_edit_008",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4e71f903",
+      "task_id": "con_edit_008",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9661d927",
+      "task_id": "con_edit_008",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "8d25387a",
+      "task_id": "con_edit_008",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d8e52a48",
+      "task_id": "con_edit_008",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "01a28809",
+      "task_id": "con_edit_008",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a6b27b5f",
+      "task_id": "con_edit_008",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "con_search_009",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "119737b1",
+      "task_id": "con_search_009",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7310e608",
+      "task_id": "con_search_009",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "8aae8711",
+      "task_id": "con_search_009",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "fdfaed56",
+      "task_id": "con_search_009",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "1af84ade",
+      "task_id": "con_search_009",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7833fec9",
+      "task_id": "con_search_009",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b6309c72",
+      "task_id": "con_search_009",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "565df19d",
+      "task_id": "con_search_009",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b4a87597",
+      "task_id": "con_search_009",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "cal_create_010",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "3ab80718",
+      "task_id": "cal_create_010",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "24a627f7",
+      "task_id": "cal_create_010",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e3eb9269",
+      "task_id": "cal_create_010",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "86401d13",
+      "task_id": "cal_create_010",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "de7ef09b",
+      "task_id": "cal_create_010",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "138ab610",
+      "task_id": "cal_create_010",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "465d9716",
+      "task_id": "cal_create_010",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "be60c9d0",
+      "task_id": "cal_create_010",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6c4b62f8",
+      "task_id": "cal_create_010",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "cal_delete_011",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "53594263",
+      "task_id": "cal_delete_011",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2b3044a2",
+      "task_id": "cal_delete_011",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a8fa18aa",
+      "task_id": "cal_delete_011",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d88866b0",
+      "task_id": "cal_delete_011",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "c0e03814",
+      "task_id": "cal_delete_011",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e550fc8a",
+      "task_id": "cal_delete_011",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "817f8f89",
+      "task_id": "cal_delete_011",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2136486f",
+      "task_id": "cal_delete_011",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "1352c730",
+      "task_id": "cal_delete_011",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "file_create_012",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "18697ecf",
+      "task_id": "file_create_012",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "cd1d8ff5",
+      "task_id": "file_create_012",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "bb79e92c",
+      "task_id": "file_create_012",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "37036f12",
+      "task_id": "file_create_012",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "11ef9ddf",
+      "task_id": "file_create_012",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "f066b510",
+      "task_id": "file_create_012",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e1c38fad",
+      "task_id": "file_create_012",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7fa4840b",
+      "task_id": "file_create_012",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a3faa184",
+      "task_id": "file_create_012",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "file_rename_013",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "32210c19",
+      "task_id": "file_rename_013",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7cc6b043",
+      "task_id": "file_rename_013",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "664922bd",
+      "task_id": "file_rename_013",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e888d3f0",
+      "task_id": "file_rename_013",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "f531ea13",
+      "task_id": "file_rename_013",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4522a2b0",
+      "task_id": "file_rename_013",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "ad282345",
+      "task_id": "file_rename_013",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "48a1afe4",
+      "task_id": "file_rename_013",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9409097d",
+      "task_id": "file_rename_013",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "alarm_set_014",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "6451de82",
+      "task_id": "alarm_set_014",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "de72174e",
+      "task_id": "alarm_set_014",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "ed77f417",
+      "task_id": "alarm_set_014",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "bf69a0b2",
+      "task_id": "alarm_set_014",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a2b6de0f",
+      "task_id": "alarm_set_014",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d8ce4af5",
+      "task_id": "alarm_set_014",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "62fbf8d0",
+      "task_id": "alarm_set_014",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "756c0d35",
+      "task_id": "alarm_set_014",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2f443826",
+      "task_id": "alarm_set_014",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "alarm_delete_015",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "a8732b0e",
+      "task_id": "alarm_delete_015",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "581351bd",
+      "task_id": "alarm_delete_015",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "b0eebec1",
+      "task_id": "alarm_delete_015",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "cfd822b3",
+      "task_id": "alarm_delete_015",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "33c03a32",
+      "task_id": "alarm_delete_015",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "53af2a12",
+      "task_id": "alarm_delete_015",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2dbea83e",
+      "task_id": "alarm_delete_015",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "36042c90",
+      "task_id": "alarm_delete_015",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9442b203",
+      "task_id": "alarm_delete_015",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "note_create_016",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "205da1d6",
+      "task_id": "note_create_016",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "eec1d68a",
+      "task_id": "note_create_016",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "99743fa2",
+      "task_id": "note_create_016",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "826f6a2f",
+      "task_id": "note_create_016",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "55be7830",
+      "task_id": "note_create_016",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "cbc4fa89",
+      "task_id": "note_create_016",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "39ecc34e",
+      "task_id": "note_create_016",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2d281bfc",
+      "task_id": "note_create_016",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "1d3f251f",
+      "task_id": "note_create_016",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "note_edit_017",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "aa5810bc",
+      "task_id": "note_edit_017",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a210c5a7",
+      "task_id": "note_edit_017",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "1ea4984f",
+      "task_id": "note_edit_017",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "684233a5",
+      "task_id": "note_edit_017",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "df959e3c",
+      "task_id": "note_edit_017",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6ef2d893",
+      "task_id": "note_edit_017",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e5637184",
+      "task_id": "note_edit_017",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0206918f",
+      "task_id": "note_edit_017",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "0daf873b",
+      "task_id": "note_edit_017",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "gallery_view_018",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "0bd4d8d1",
+      "task_id": "gallery_view_018",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4a1ef695",
+      "task_id": "gallery_view_018",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "00222c94",
+      "task_id": "gallery_view_018",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6f0ccb24",
+      "task_id": "gallery_view_018",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "17402210",
+      "task_id": "gallery_view_018",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "75d06d77",
+      "task_id": "gallery_view_018",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "a28d1433",
+      "task_id": "gallery_view_018",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "2ef931e7",
+      "task_id": "gallery_view_018",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "648ad9f9",
+      "task_id": "gallery_view_018",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "gallery_share_019",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "c7a929a4",
+      "task_id": "gallery_share_019",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "937c0f56",
+      "task_id": "gallery_share_019",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "44f99ba8",
+      "task_id": "gallery_share_019",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "6d76b0fa",
+      "task_id": "gallery_share_019",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "47329d71",
+      "task_id": "gallery_share_019",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "8d344082",
+      "task_id": "gallery_share_019",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "3e5e6fe0",
+      "task_id": "gallery_share_019",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "d1d898e7",
+      "task_id": "gallery_share_019",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "48fe0009",
+      "task_id": "gallery_share_019",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    },
+    {
+      "task_id": "phone_call_020",
+      "condition": "none_none",
+      "error": "name 'FaultSeverity' is not defined"
+    },
+    {
+      "event_id": "f7cd09ae",
+      "task_id": "phone_call_020",
+      "condition": "stale_observation_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "3fad7354",
+      "task_id": "phone_call_020",
+      "condition": "stale_observation_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "afefb918",
+      "task_id": "phone_call_020",
+      "condition": "stale_observation_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "f98fa7bc",
+      "task_id": "phone_call_020",
+      "condition": "phantom_ack_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "9756bbad",
+      "task_id": "phone_call_020",
+      "condition": "phantom_ack_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "7bd50b8e",
+      "task_id": "phone_call_020",
+      "condition": "phantom_ack_severe",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "4ab3e162",
+      "task_id": "phone_call_020",
+      "condition": "state_rollback_mild",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "92afcabc",
+      "task_id": "phone_call_020",
+      "condition": "state_rollback_moderate",
+      "label": "partial_fail"
+    },
+    {
+      "event_id": "e7699e7a",
+      "task_id": "phone_call_020",
+      "condition": "state_rollback_severe",
+      "label": "partial_fail"
+    }
+  ]
+}
