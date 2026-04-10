@@ -1,0 +1,244 @@
+[
+  {
+    "case_id": "fallback_navigation",
+    "prompt": "Stop the current navigation and return to the map home screen.",
+    "task": {
+      "task_id": "nav_stop_003",
+      "app": "navigation",
+      "category": "navigation",
+      "description": "Stop active navigation, verify return to home screen",
+      "instruction": "停止当前导航，返回导航主页",
+      "postconditions": [
+        "(is_navigating value_is false)",
+        "(current_screen is navigation_home)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/navigation/set_destination",
+          "body": {
+            "name": "机场"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/navigation/start",
+          "body": {}
+        },
+        {
+          "method": "POST",
+          "path": "/api/navigation/stop",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.navigation"
+    },
+    "category": "navigation",
+    "auth_context": {},
+    "setup_actions": [
+      {
+        "method": "POST",
+        "path": "/api/navigation/set_destination",
+        "body": {
+          "name": "机场"
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/navigation/start",
+        "body": {}
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_media",
+    "prompt": "Skip to the next song.",
+    "task": {
+      "task_id": "media_next_005",
+      "app": "media",
+      "category": "media",
+      "description": "Skip to next track, verify track change in GUI",
+      "instruction": "播放音乐，然后切换到下一首",
+      "postconditions": [
+        "(current_track contains 晴天)",
+        "(playing value_is true)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/media/play",
+          "body": {}
+        },
+        {
+          "method": "POST",
+          "path": "/api/media/next",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.media"
+    },
+    "category": "media",
+    "auth_context": {},
+    "setup_actions": [],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_climate",
+    "prompt": "Turn the air conditioner off.",
+    "task": {
+      "task_id": "climate_ac_off_008",
+      "app": "climate",
+      "category": "climate",
+      "description": "Toggle AC off, verify status change in GUI",
+      "instruction": "关闭空调",
+      "postconditions": [
+        "(ac_on value_is false)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/climate/toggle_ac",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.climate"
+    },
+    "category": "climate",
+    "auth_context": {},
+    "setup_actions": [],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_phone",
+    "prompt": "End the current call.",
+    "task": {
+      "task_id": "phone_hangup_011",
+      "app": "phone",
+      "category": "phone",
+      "description": "End an active call, verify return to phone home",
+      "instruction": "拨打电话给李四，然后挂断",
+      "postconditions": [
+        "(in_call value_is false)",
+        "(current_screen is phone_home)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/phone/dial",
+          "body": {
+            "contact": "李四"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/phone/hangup",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.phone"
+    },
+    "category": "phone",
+    "auth_context": {},
+    "setup_actions": [
+      {
+        "method": "POST",
+        "path": "/api/phone/dial",
+        "body": {
+          "contact": "李四"
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_messages",
+    "prompt": "Open the conversation and mark the message as read.",
+    "task": {
+      "task_id": "msg_read_014",
+      "app": "messages",
+      "category": "messages",
+      "description": "Read a conversation and mark as read, verify status",
+      "instruction": "打开与张三的对话，标记为已读",
+      "postconditions": [
+        "(message_status value_is read)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/messages/read",
+          "body": {
+            "contact": "张三"
+          }
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.messages"
+    },
+    "category": "messages",
+    "auth_context": {},
+    "setup_actions": [],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_settings",
+    "prompt": "Disable Bluetooth in settings.",
+    "task": {
+      "task_id": "set_bluetooth_018",
+      "app": "settings",
+      "category": "settings",
+      "description": "Toggle Bluetooth off, verify in GUI and phone status",
+      "instruction": "关闭蓝牙",
+      "postconditions": [
+        "(bluetooth_on value_is false)",
+        "(bluetooth_status value_is disabled)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/settings/toggle_bluetooth",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.settings"
+    },
+    "category": "settings",
+    "auth_context": {},
+    "setup_actions": [],
+    "notes": ""
+  },
+  {
+    "case_id": "fallback_vehicle",
+    "prompt": "Driver confirmed: unlock the doors now.",
+    "task": {
+      "task_id": "veh_unlock_020",
+      "app": "vehicle",
+      "category": "vehicle",
+      "description": "Unlock doors via API, verify in GUI",
+      "instruction": "解锁车门",
+      "postconditions": [
+        "(doors_locked value_is false)"
+      ],
+      "api_actions": [
+        {
+          "method": "POST",
+          "path": "/api/vehicle/unlock_doors",
+          "body": {}
+        }
+      ],
+      "expected_switches": 3,
+      "target_package": "cockpit.vehicle"
+    },
+    "category": "vehicle",
+    "auth_context": {
+      "confirmation_provided": true
+    },
+    "setup_actions": [],
+    "notes": "Yellow-zone vehicle action with explicit confirmation."
+  }
+]

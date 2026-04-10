@@ -1,0 +1,33 @@
+{
+  "split": "transfer",
+  "n_events": 100,
+  "detectors": {
+    "vlm_judge": {
+      "error": "No matching events"
+    },
+    "cmv": {
+      "auprc": 0.7222222222222222,
+      "auroc": 0.9840425531914894,
+      "brier": 0.07207432285872392,
+      "ece": 0.13437466338276863,
+      "false_alarm_rate": 0.0,
+      "n_evaluated": 100
+    },
+    "fixed_delay": {
+      "auprc": 0.06,
+      "auroc": 0.5,
+      "brier": 0.06,
+      "ece": 0.06,
+      "false_alarm_rate": 0.0,
+      "n_evaluated": 100
+    }
+  },
+  "c2_results": {
+    "cmv_auprc": 0.7222222222222222,
+    "vlm_auprc": 0.0,
+    "gap_pct": 72.22,
+    "c2_auprc_passed": true,
+    "c2_gap_passed": false,
+    "c2_overall_passed": false
+  }
+}

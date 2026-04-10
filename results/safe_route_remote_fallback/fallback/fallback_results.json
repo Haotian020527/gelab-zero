@@ -1,0 +1,767 @@
+{
+  "stage": "safe_route_fallback",
+  "timestamp": "2026-04-09T09:07:01",
+  "bench_cases": 7,
+  "systems": [
+    "no_fallback",
+    "full_screen_fallback",
+    "contract_scoped_fallback"
+  ],
+  "results": [
+    {
+      "case_id": "fallback_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "full_screen_fallback",
+      "duration_ms": 2394,
+      "time_to_first_action_ms": 2394,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 2371,
+      "time_to_first_action_ms": 2371,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination",
+            "/api/navigation/start",
+            "/api/navigation/stop"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(is_navigating value_is false)",
+            "(current_screen is navigation_home)"
+          ],
+          "task_id": "nav_stop_003",
+          "prompt": "Stop the current navigation and return to the map home screen.",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 2370,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "full_screen_fallback",
+      "duration_ms": 1750,
+      "time_to_first_action_ms": 1750,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1743,
+      "time_to_first_action_ms": 1743,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play",
+            "/api/media/next"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(current_track contains 晴天)",
+            "(playing value_is true)"
+          ],
+          "task_id": "media_next_005",
+          "prompt": "Skip to the next song.",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1742,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "full_screen_fallback",
+      "duration_ms": 1138,
+      "time_to_first_action_ms": 1138,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1147,
+      "time_to_first_action_ms": 1147,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "climate.toggle_ac",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/climate/toggle_ac"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(ac_on value_is false)"
+          ],
+          "task_id": "climate_ac_off_008",
+          "prompt": "Turn the air conditioner off.",
+          "metadata": {
+            "category": "climate",
+            "app": "climate"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1146,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "full_screen_fallback",
+      "duration_ms": 7471,
+      "time_to_first_action_ms": 7471,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1779,
+      "time_to_first_action_ms": 1779,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "phone.dial",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/phone/dial",
+            "/api/phone/hangup"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(in_call value_is false)",
+            "(current_screen is phone_home)"
+          ],
+          "task_id": "phone_hangup_011",
+          "prompt": "End the current call.",
+          "metadata": {
+            "category": "phone",
+            "app": "phone"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1777,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "full_screen_fallback",
+      "duration_ms": 1129,
+      "time_to_first_action_ms": 1129,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1145,
+      "time_to_first_action_ms": 1145,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.read",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/read"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(message_status value_is read)"
+          ],
+          "task_id": "msg_read_014",
+          "prompt": "Open the conversation and mark the message as read.",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1144,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "full_screen_fallback",
+      "duration_ms": 1138,
+      "time_to_first_action_ms": 1138,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1135,
+      "time_to_first_action_ms": 1135,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "settings.toggle_bluetooth",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/settings/toggle_bluetooth"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(bluetooth_on value_is false)",
+            "(bluetooth_status value_is disabled)"
+          ],
+          "task_id": "set_bluetooth_018",
+          "prompt": "Disable Bluetooth in settings.",
+          "metadata": {
+            "category": "settings",
+            "app": "settings"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1134,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "fallback_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 108,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone vehicle action with explicit confirmation.",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "fallback_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "full_screen_fallback",
+      "duration_ms": 1124,
+      "time_to_first_action_ms": 1124,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone vehicle action with explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "fallback_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1126,
+      "time_to_first_action_ms": 1126,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 108,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone vehicle action with explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "vehicle.unlock_doors",
+          "risk_zone": "yellow",
+          "required_signals": {
+            "vehicle.speed_kmh": 0
+          },
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/vehicle/unlock_doors"
+          ],
+          "gui_fallback_policy": "challenge",
+          "postconditions": [
+            "(doors_locked value_is false)"
+          ],
+          "task_id": "veh_unlock_020",
+          "prompt": "Driver confirmed: unlock the doors now.",
+          "metadata": {
+            "category": "vehicle",
+            "app": "vehicle"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {
+            "vehicle.speed_kmh": {
+              "expected": 0,
+              "actual": 0,
+              "passed": true
+            }
+          },
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1125,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "no_fallback": {
+      "runs": 7,
+      "success_rate": 0.0,
+      "mean_duration_ms": 0,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 108,
+      "fallback_invocation_rate": 0.0
+    },
+    "full_screen_fallback": {
+      "runs": 7,
+      "success_rate": 1.0,
+      "mean_duration_ms": 2306.285714285714,
+      "median_duration_ms": 1138,
+      "mean_time_to_first_action_ms": 2306.285714285714,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 2073600,
+      "peak_vram_mb": 108,
+      "fallback_invocation_rate": 1.0
+    },
+    "contract_scoped_fallback": {
+      "runs": 7,
+      "success_rate": 1.0,
+      "mean_duration_ms": 1492.2857142857142,
+      "median_duration_ms": 1147,
+      "mean_time_to_first_action_ms": 1492.2857142857142,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 153600,
+      "peak_vram_mb": 108,
+      "fallback_invocation_rate": 1.0
+    }
+  },
+  "comparison": {
+    "success_gap_vs_full_screen": 0.0,
+    "vision_pixel_reduction_vs_full_screen": 0.9259259259259259
+  },
+  "overall": "PASS"
+}

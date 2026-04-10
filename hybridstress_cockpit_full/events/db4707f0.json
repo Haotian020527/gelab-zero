@@ -1,0 +1,68 @@
+{
+  "event_id": "db4707f0",
+  "task_id": "veh_sport_mode_019",
+  "step_index": 0,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/veh_sport_mode_019/pre_0.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/veh_sport_mode_019/hybrid_run0_post_0.png",
+  "action": "\u5207\u6362\u9a7e\u9a76\u6a21\u5f0f\u4e3a\u8fd0\u52a8\u6a21\u5f0f",
+  "postconditions": [
+    {
+      "subject": "drive_mode",
+      "relation": "value_is",
+      "object": "sport"
+    },
+    {
+      "subject": "current_screen",
+      "relation": "is",
+      "object": "vehicle_drive_mode"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_veh_sport_mode_019_0",
+  "label": "consistent_pass",
+  "fault_type": "none",
+  "fault_severity": "none",
+  "timestamp_pre": 1775538533.4108071,
+  "timestamp_post": 1775538543.4378211,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      529,
+      531,
+      538
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      533,
+      527,
+      531
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1666,
+      1681,
+      1678
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "event_id": "9eaacee7",
+  "task_id": "ho_climate_dual_003",
+  "step_index": 8,
+  "pre_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_climate_dual_003/pre_8.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_climate_dual_003/hybrid_run0_post_8.png",
+  "action": "\u8bbe\u7f6e\u53cc\u533a\u7a7a\u8c03\uff1a\u9a7e\u9a76\u545822\u5ea6\uff0c\u526f\u9a7e\u9a7626\u5ea6",
+  "postconditions": [
+    {
+      "subject": "temperature_driver",
+      "relation": "value_is",
+      "object": "22.0"
+    },
+    {
+      "subject": "temperature_passenger",
+      "relation": "value_is",
+      "object": "26.0"
+    }
+  ],
+  "emulator_snapshot_id": "transfer_ho_climate_dual_003_8",
+  "label": "api_preferred",
+  "fault_type": "state_rollback",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775620112.8048065,
+  "timestamp_post": 1775620174.1488035,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1585,
+      1586,
+      1593
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      581,
+      586,
+      596
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      17663,
+      17665,
+      17672
+    ]
+  }
+}

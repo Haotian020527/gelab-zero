@@ -1,0 +1,63 @@
+{
+  "event_id": "fdf6173b",
+  "task_id": "set_wifi_017",
+  "step_index": 9,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/set_wifi_017/pre_9.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/set_wifi_017/hybrid_run0_post_9.png",
+  "action": "\u5173\u95edWiFi",
+  "postconditions": [
+    {
+      "subject": "wifi_on",
+      "relation": "value_is",
+      "object": "false"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_set_wifi_017_9",
+  "label": "boundary_specific",
+  "fault_type": "state_rollback",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775538378.6090758,
+  "timestamp_post": 1775538397.943095,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      3582,
+      3579,
+      3581
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      582,
+      581,
+      586
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1662,
+      1682,
+      1682
+    ]
+  }
+}

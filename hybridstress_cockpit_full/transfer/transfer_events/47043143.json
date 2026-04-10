@@ -1,0 +1,68 @@
+{
+  "event_id": "47043143",
+  "task_id": "ho_climate_defrost_008",
+  "step_index": 7,
+  "pre_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_climate_defrost_008/pre_7.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_climate_defrost_008/hybrid_run0_post_7.png",
+  "action": "\u5f00\u542f\u540e\u6321\u98ce\u9664\u971c\uff0c\u98ce\u901f\u8c03\u5230\u6700\u5927",
+  "postconditions": [
+    {
+      "subject": "rear_defrost",
+      "relation": "value_is",
+      "object": "true"
+    },
+    {
+      "subject": "fan_speed",
+      "relation": "value_is",
+      "object": "7"
+    }
+  ],
+  "emulator_snapshot_id": "transfer_ho_climate_defrost_008_7",
+  "label": "api_preferred",
+  "fault_type": "state_rollback",
+  "fault_severity": "mild",
+  "timestamp_pre": 1775622094.0778823,
+  "timestamp_post": 1775622141.8442109,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1081,
+      1080,
+      1082
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      582,
+      581,
+      580
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      13655,
+      13658,
+      13649
+    ]
+  }
+}

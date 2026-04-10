@@ -1,0 +1,30 @@
+{
+  "split": "in_distribution",
+  "n_events": 40,
+  "detectors": {
+    "vlm_judge": {
+      "auprc": 0.15,
+      "auroc": 0.5,
+      "brier": 0.15,
+      "ece": 0.15,
+      "false_alarm_rate": 0.0,
+      "n_evaluated": 40
+    },
+    "cmv": {
+      "auprc": 0.6527777777777778,
+      "auroc": 0.946078431372549,
+      "brier": 0.10826739995652201,
+      "ece": 0.19976673685014248,
+      "false_alarm_rate": 0.0,
+      "n_evaluated": 40
+    },
+    "fixed_delay": {
+      "auprc": 0.15,
+      "auroc": 0.5,
+      "brier": 0.15,
+      "ece": 0.15,
+      "false_alarm_rate": 0.0,
+      "n_evaluated": 40
+    }
+  }
+}

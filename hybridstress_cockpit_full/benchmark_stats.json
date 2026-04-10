@@ -1,0 +1,23 @@
+{
+  "n_tasks": 20,
+  "n_events": 200,
+  "n_conditions": 200,
+  "fault_distribution": {
+    "none": 20,
+    "stale_observation": 60,
+    "phantom_ack": 60,
+    "state_rollback": 60
+  },
+  "severity_distribution": {
+    "none": 20,
+    "mild": 60,
+    "moderate": 60,
+    "severe": 60
+  },
+  "label_distribution": {
+    "consistent_pass": 98,
+    "api_preferred": 48,
+    "boundary_specific": 54
+  },
+  "replay_determinism_rate": 1.0
+}

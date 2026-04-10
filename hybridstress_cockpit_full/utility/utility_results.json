@@ -1,0 +1,27 @@
+{
+  "n_tasks": 20,
+  "success_rates": {
+    "baseline": 0.15,
+    "blind_retry": 1.0,
+    "cmv_recovery": 0.15
+  },
+  "cmv_vs_baseline": {
+    "mean_delta": 0.0,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0,
+    "p_positive": 0.0
+  },
+  "blind_vs_baseline": {
+    "mean_delta": 0.8497699999999999,
+    "ci_lower": 0.7,
+    "ci_upper": 1.0,
+    "p_positive": 1.0
+  },
+  "cmv_vs_blind": {
+    "mean_delta": -0.85057,
+    "ci_lower": -1.0,
+    "ci_upper": -0.7,
+    "p_positive": 0.0
+  },
+  "c3_positive": false
+}

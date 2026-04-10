@@ -1,0 +1,68 @@
+{
+  "event_id": "52bd11a1",
+  "task_id": "set_brightness_016",
+  "step_index": 8,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/set_brightness_016/pre_8.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/set_brightness_016/hybrid_run0_post_8.png",
+  "action": "\u5c06\u5c4f\u5e55\u4eae\u5ea6\u8c03\u5230\u6700\u5927\uff08100\uff09",
+  "postconditions": [
+    {
+      "subject": "brightness",
+      "relation": "value_is",
+      "object": "100"
+    },
+    {
+      "subject": "current_screen",
+      "relation": "is",
+      "object": "settings_display"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_set_brightness_016_8",
+  "label": "boundary_specific",
+  "fault_type": "state_rollback",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775538195.9857152,
+  "timestamp_post": 1775538226.2167513,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1580,
+      1579,
+      1583
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      530,
+      533,
+      533
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      7364,
+      7347,
+      7364
+    ]
+  }
+}

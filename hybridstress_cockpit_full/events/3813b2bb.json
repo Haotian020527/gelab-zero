@@ -1,0 +1,63 @@
+{
+  "event_id": "3813b2bb",
+  "task_id": "climate_ac_off_008",
+  "step_index": 6,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/climate_ac_off_008/pre_6.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/climate_ac_off_008/hybrid_run0_post_6.png",
+  "action": "\u5173\u95ed\u7a7a\u8c03",
+  "postconditions": [
+    {
+      "subject": "ac_on",
+      "relation": "value_is",
+      "object": "false"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_climate_ac_off_008_6",
+  "label": "boundary_specific",
+  "fault_type": "phantom_ack",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775536376.4893796,
+  "timestamp_post": 1775536386.5999925,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      583,
+      580,
+      581
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      531,
+      526,
+      531
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1666,
+      1648,
+      1649
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "event_id": "2dd2209e",
+  "task_id": "ho_media_prev_010",
+  "step_index": 8,
+  "pre_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_media_prev_010/pre_8.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_media_prev_010/hybrid_run0_post_8.png",
+  "action": "\u64ad\u653e\u97f3\u4e50\uff0c\u7136\u540e\u5207\u56de\u4e0a\u4e00\u9996",
+  "postconditions": [
+    {
+      "subject": "playing",
+      "relation": "value_is",
+      "object": "true"
+    },
+    {
+      "subject": "current_track",
+      "relation": "contains",
+      "object": "\u9752\u82b1\u74f7"
+    }
+  ],
+  "emulator_snapshot_id": "transfer_ho_media_prev_010_8",
+  "label": "boundary_specific",
+  "fault_type": "state_rollback",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775622917.4943426,
+  "timestamp_post": 1775622932.5546896,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1581,
+      1580,
+      1585
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      535,
+      546,
+      531
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      2285,
+      2315,
+      2284
+    ]
+  }
+}

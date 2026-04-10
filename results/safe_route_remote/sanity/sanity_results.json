@@ -1,0 +1,151 @@
+{
+  "stage": "safe_route_sanity",
+  "timestamp": "2026-04-09T01:55:48",
+  "checks": {
+    "gateway_unit_checks": "PASS",
+    "pilot_routine_benchmark": "PASS"
+  },
+  "gateway": {
+    "schema": {
+      "version": "1.0",
+      "required_fields": [
+        "intent",
+        "risk_zone",
+        "required_signals",
+        "required_2fa",
+        "allowed_api_paths",
+        "gui_fallback_policy",
+        "postconditions"
+      ],
+      "risk_zones": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "gui_fallback_policies": [
+        "allow",
+        "challenge",
+        "deny"
+      ]
+    },
+    "checks": {
+      "schema_version": true,
+      "green_allows": true,
+      "red_blocks_on_bad_gear": true,
+      "red_requires_2fa": true,
+      "red_allows_after_2fa": true,
+      "yellow_challenges_without_confirmation": true,
+      "yellow_allows_with_confirmation": true
+    },
+    "overall": "PASS",
+    "contracts": {
+      "green": {
+        "schema_version": "1.0",
+        "intent": "media.play",
+        "risk_zone": "green",
+        "required_signals": {},
+        "required_2fa": false,
+        "allowed_api_paths": [
+          "/api/media/play"
+        ],
+        "gui_fallback_policy": "allow",
+        "postconditions": [
+          "(playing value_is true)",
+          "(current_track contains 夜曲)",
+          "(current_screen is media_playing)"
+        ],
+        "task_id": "media_play_004",
+        "prompt": "Play music from playlist via API, verify playback in GUI",
+        "metadata": {
+          "category": "media",
+          "app": "media"
+        }
+      },
+      "red": {
+        "schema_version": "1.0",
+        "intent": "vehicle.ota_start",
+        "risk_zone": "red",
+        "required_signals": {
+          "vehicle.gear": "P",
+          "vehicle.speed_kmh": 0,
+          "vehicle.battery_percent": ">=30"
+        },
+        "required_2fa": true,
+        "allowed_api_paths": [
+          "/api/vehicle/ota_start"
+        ],
+        "gui_fallback_policy": "deny",
+        "postconditions": [],
+        "task_id": "red_ota_seed",
+        "prompt": "Start OTA update now",
+        "metadata": {
+          "category": null,
+          "app": null
+        }
+      },
+      "yellow": {
+        "schema_version": "1.0",
+        "intent": "vehicle.unlock_doors",
+        "risk_zone": "yellow",
+        "required_signals": {
+          "vehicle.speed_kmh": 0
+        },
+        "required_2fa": false,
+        "allowed_api_paths": [
+          "/api/vehicle/unlock_doors"
+        ],
+        "gui_fallback_policy": "challenge",
+        "postconditions": [],
+        "task_id": "yellow_unlock_seed",
+        "prompt": "Unlock the doors",
+        "metadata": {
+          "category": null,
+          "app": null
+        }
+      }
+    }
+  },
+  "pilot_summary": {
+    "api_only": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.3333333333333333,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0.3333333333333333,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    },
+    "hybrid": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.1111111111111111,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0.1111111111111111,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    },
+    "gui_only": {
+      "runs": 9,
+      "success_rate": 0.3333333333333333,
+      "mean_duration_ms": 1192.7777777777778,
+      "median_duration_ms": 1136,
+      "mean_time_to_first_action_ms": 1192.7777777777778,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 2073600,
+      "peak_vram_mb": 116
+    },
+    "safe_route": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 1,
+      "median_duration_ms": 1,
+      "mean_time_to_first_action_ms": 1,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    }
+  },
+  "overall": "PASS"
+}

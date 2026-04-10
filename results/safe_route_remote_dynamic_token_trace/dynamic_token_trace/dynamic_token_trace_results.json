@@ -1,0 +1,470 @@
+{
+  "stage": "safe_route_dynamic_token_trace",
+  "processor_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "Identify the actionable cockpit UI region for this fallback request.",
+  "cases": [
+    {
+      "case_id": "fallback_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "prompt": "Stop the current navigation and return to the map home screen.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_navigation_full_screen.png",
+        "image_file_bytes": 235554,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_navigation_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "prompt": "Skip to the next song.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_media_full_screen.png",
+        "image_file_bytes": 237914,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_media_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "prompt": "Turn the air conditioner off.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_climate_full_screen.png",
+        "image_file_bytes": 237914,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_climate_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "prompt": "End the current call.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_phone_full_screen.png",
+        "image_file_bytes": 63936,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_phone_contract_roi.png",
+        "image_file_bytes": 8517,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "prompt": "Open the conversation and mark the message as read.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_messages_full_screen.png",
+        "image_file_bytes": 237919,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_messages_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "prompt": "Disable Bluetooth in settings.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_settings_full_screen.png",
+        "image_file_bytes": 237919,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_settings_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    },
+    {
+      "case_id": "fallback_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: unlock the doors now.",
+      "roi_policy": "center_crop_480x320_from_actual_fallback_screen",
+      "crop": {
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "crop_box": [
+          400,
+          200,
+          880,
+          520
+        ],
+        "crop_dimensions": [
+          480,
+          320
+        ]
+      },
+      "full_screen": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_vehicle_full_screen.png",
+        "image_file_bytes": 237919,
+        "total_input_tokens": 1229,
+        "placeholder_image_tokens": 1196,
+        "grid_image_tokens": 1196,
+        "effective_image_tokens": 1196,
+        "image_grid_thw": [
+          [
+            1,
+            52,
+            92
+          ]
+        ],
+        "pixel_values_shape": [
+          4784,
+          1176
+        ],
+        "raw_pixels": 2073600
+      },
+      "contract_roi": {
+        "image_path": "results/safe_route_remote_dynamic_token_trace/dynamic_token_trace/fallback_vehicle_contract_roi.png",
+        "image_file_bytes": 44650,
+        "total_input_tokens": 220,
+        "placeholder_image_tokens": 187,
+        "grid_image_tokens": 187,
+        "effective_image_tokens": 187,
+        "image_grid_thw": [
+          [
+            1,
+            22,
+            34
+          ]
+        ],
+        "pixel_values_shape": [
+          748,
+          1176
+        ],
+        "raw_pixels": 153600
+      }
+    }
+  ],
+  "summary": {
+    "cases": 7,
+    "mean_full_screen_effective_image_tokens": 1196,
+    "mean_contract_roi_effective_image_tokens": 187,
+    "median_full_screen_effective_image_tokens": 1196,
+    "median_contract_roi_effective_image_tokens": 187,
+    "aggregate_full_screen_effective_image_tokens": 8372,
+    "aggregate_contract_roi_effective_image_tokens": 1309,
+    "aggregate_image_token_reduction_vs_full_screen": 0.8436454849498327,
+    "mean_case_image_token_reduction_vs_full_screen": 0.8436454849498327,
+    "aggregate_full_screen_total_input_tokens": 8603,
+    "aggregate_contract_roi_total_input_tokens": 1540,
+    "aggregate_total_input_token_reduction_vs_full_screen": 0.8209926769731489,
+    "mean_case_total_input_token_reduction_vs_full_screen": 0.8209926769731489,
+    "visual_area_reduction_vs_full_screen": 0.9259259259259259
+  },
+  "overall": "PASS",
+  "notes": [
+    "This stage uses actual fallback-suite cockpit screenshots after case setup.",
+    "The contract ROI is a deterministic 480x320 crop from each actual screenshot, matching the bounded fallback visual budget.",
+    "This loads the Qwen2-VL processor only; it does not load model weights."
+  ]
+}

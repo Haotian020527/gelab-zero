@@ -1,0 +1,63 @@
+{
+  "event_id": "1cd9906d",
+  "task_id": "media_volume_006",
+  "step_index": 2,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/media_volume_006/pre_2.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/media_volume_006/hybrid_run0_post_2.png",
+  "action": "\u5c06\u5a92\u4f53\u97f3\u91cf\u8c03\u5230\u6700\u5927\uff08100\uff09",
+  "postconditions": [
+    {
+      "subject": "volume",
+      "relation": "value_is",
+      "object": "100"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_media_volume_006_2",
+  "label": "consistent_pass",
+  "fault_type": "stale_observation",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775535688.483498,
+  "timestamp_post": 1775535718.2564194,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1396,
+      1384,
+      1382
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      580,
+      582,
+      580
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      7353,
+      7349,
+      7350
+    ]
+  }
+}

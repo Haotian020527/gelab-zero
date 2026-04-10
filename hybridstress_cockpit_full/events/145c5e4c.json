@@ -1,0 +1,68 @@
+{
+  "event_id": "145c5e4c",
+  "task_id": "nav_set_dest_001",
+  "step_index": 6,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/nav_set_dest_001/pre_6.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/nav_set_dest_001/hybrid_run0_post_6.png",
+  "action": "\u8bbe\u7f6e\u5bfc\u822a\u76ee\u7684\u5730\u4e3a\u673a\u573a\uff0c\u67e5\u770b\u8def\u7ebf\u9884\u89c8",
+  "postconditions": [
+    {
+      "subject": "navigation",
+      "relation": "contains",
+      "object": "\u673a\u573a"
+    },
+    {
+      "subject": "current_screen",
+      "relation": "is",
+      "object": "navigation_route_preview"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_nav_set_dest_001_6",
+  "label": "api_preferred",
+  "fault_type": "phantom_ack",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775534958.845488,
+  "timestamp_post": 1775534969.3013198,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      583,
+      582,
+      580
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      585,
+      579,
+      582
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1713,
+      1718,
+      1715
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "stage": "safe_route_token_accounting",
+  "processor_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "Describe the cockpit screen briefly and identify the actionable UI region.",
+  "probes": {
+    "full_screen": {
+      "image_path": "results/safe_route_remote_token_accounting/token_accounting/full_screen_probe.png",
+      "image_file_bytes": 10068,
+      "total_input_tokens": 2724,
+      "placeholder_image_tokens": 2691,
+      "grid_image_tokens": 2691,
+      "effective_image_tokens": 2691,
+      "image_grid_thw": [
+        [
+          1,
+          78,
+          138
+        ]
+      ],
+      "pixel_values_shape": [
+        10764,
+        1176
+      ],
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "raw_pixels": 2073600
+    },
+    "contract_roi": {
+      "image_path": "results/safe_route_remote_token_accounting/token_accounting/contract_roi_probe.png",
+      "image_file_bytes": 2965,
+      "total_input_tokens": 220,
+      "placeholder_image_tokens": 187,
+      "grid_image_tokens": 187,
+      "effective_image_tokens": 187,
+      "image_grid_thw": [
+        [
+          1,
+          22,
+          34
+        ]
+      ],
+      "pixel_values_shape": [
+        748,
+        1176
+      ],
+      "image_dimensions": [
+        480,
+        320
+      ],
+      "raw_pixels": 153600
+    }
+  },
+  "summary": {
+    "full_screen_effective_image_tokens": 2691,
+    "contract_roi_effective_image_tokens": 187,
+    "image_token_reduction_vs_full_screen": 0.9305091044221478,
+    "total_input_token_reduction_vs_full_screen": 0.9192364170337739,
+    "visual_area_reduction_vs_full_screen": 0.9259259259259259,
+    "model_weights_loaded": false
+  },
+  "overall": "PASS",
+  "notes": [
+    "This stage loads the Qwen2-VL processor only; it does not load model weights.",
+    "effective_image_tokens uses Qwen image_grid_thw when available, falling back to image placeholder counts."
+  ]
+}

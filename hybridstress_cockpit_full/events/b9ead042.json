@@ -1,0 +1,73 @@
+{
+  "event_id": "b9ead042",
+  "task_id": "phone_dial_010",
+  "step_index": 9,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/phone_dial_010/pre_9.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/phone_dial_010/hybrid_run0_post_9.png",
+  "action": "\u62e8\u6253\u7535\u8bdd\u7ed9\u5f20\u4e09",
+  "postconditions": [
+    {
+      "subject": "in_call",
+      "relation": "value_is",
+      "object": "true"
+    },
+    {
+      "subject": "call_contact",
+      "relation": "contains",
+      "object": "\u5f20\u4e09"
+    },
+    {
+      "subject": "current_screen",
+      "relation": "is",
+      "object": "phone_calling"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_phone_dial_010_9",
+  "label": "api_preferred",
+  "fault_type": "state_rollback",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775536681.5935855,
+  "timestamp_post": 1775536700.753707,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      3591,
+      3587,
+      3581
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      533,
+      532,
+      531
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1672,
+      1652,
+      1663
+    ]
+  }
+}

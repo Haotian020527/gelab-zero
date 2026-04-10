@@ -1,0 +1,63 @@
+{
+  "event_id": "2d884131",
+  "task_id": "veh_unlock_020",
+  "step_index": 4,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/veh_unlock_020/pre_4.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/veh_unlock_020/hybrid_run0_post_4.png",
+  "action": "\u89e3\u9501\u8f66\u95e8",
+  "postconditions": [
+    {
+      "subject": "doors_locked",
+      "relation": "value_is",
+      "object": "false"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_veh_unlock_020_4",
+  "label": "boundary_specific",
+  "fault_type": "phantom_ack",
+  "fault_severity": "mild",
+  "timestamp_pre": 1775538720.3528838,
+  "timestamp_post": 1775538730.6683323,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      594,
+      578,
+      581
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      580,
+      584,
+      579
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1661,
+      1666,
+      1672
+    ]
+  }
+}

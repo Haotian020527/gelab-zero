@@ -1,0 +1,63 @@
+{
+  "event_id": "ba171ef2",
+  "task_id": "msg_read_014",
+  "step_index": 6,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/msg_read_014/pre_6.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/msg_read_014/hybrid_run0_post_6.png",
+  "action": "\u6253\u5f00\u4e0e\u5f20\u4e09\u7684\u5bf9\u8bdd\uff0c\u6807\u8bb0\u4e3a\u5df2\u8bfb",
+  "postconditions": [
+    {
+      "subject": "message_status",
+      "relation": "value_is",
+      "object": "read"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_msg_read_014_6",
+  "label": "boundary_specific",
+  "fault_type": "phantom_ack",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775537537.5111055,
+  "timestamp_post": 1775537547.8790874,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      581,
+      582,
+      579
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      581,
+      585,
+      592
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1668,
+      1662,
+      1716
+    ]
+  }
+}

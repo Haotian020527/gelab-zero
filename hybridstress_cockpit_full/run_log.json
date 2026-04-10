@@ -1,0 +1,1208 @@
+{
+  "stage": "full",
+  "timestamp": "2026-04-07T12:08:00",
+  "n_tasks": 20,
+  "device_id": "192.168.50.174:5555",
+  "events": [
+    {
+      "event_id": "064e23d2",
+      "task_id": "nav_set_dest_001",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "1b432eee",
+      "task_id": "nav_set_dest_001",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "582ce14f",
+      "task_id": "nav_set_dest_001",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d3c79293",
+      "task_id": "nav_set_dest_001",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "dea91450",
+      "task_id": "nav_set_dest_001",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "df5aa723",
+      "task_id": "nav_set_dest_001",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "145c5e4c",
+      "task_id": "nav_set_dest_001",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "f6dd698d",
+      "task_id": "nav_set_dest_001",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "71dc51f0",
+      "task_id": "nav_set_dest_001",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "2acb471f",
+      "task_id": "nav_set_dest_001",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "0ff83521",
+      "task_id": "nav_start_002",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f5aac173",
+      "task_id": "nav_start_002",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "4723c99e",
+      "task_id": "nav_start_002",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "e564716c",
+      "task_id": "nav_start_002",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f938f897",
+      "task_id": "nav_start_002",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "3c669aee",
+      "task_id": "nav_start_002",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "b6e7120c",
+      "task_id": "nav_start_002",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "54957d1b",
+      "task_id": "nav_start_002",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "8ed03b60",
+      "task_id": "nav_start_002",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "7475cdad",
+      "task_id": "nav_start_002",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "09f61e50",
+      "task_id": "nav_stop_003",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "51bfc3a6",
+      "task_id": "nav_stop_003",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "c5b412ff",
+      "task_id": "nav_stop_003",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d6163b63",
+      "task_id": "nav_stop_003",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "bdbf536f",
+      "task_id": "nav_stop_003",
+      "condition": "phantom_ack_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "0542aa11",
+      "task_id": "nav_stop_003",
+      "condition": "phantom_ack_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "708a378e",
+      "task_id": "nav_stop_003",
+      "condition": "phantom_ack_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "cd68dd5e",
+      "task_id": "nav_stop_003",
+      "condition": "state_rollback_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "928f398a",
+      "task_id": "nav_stop_003",
+      "condition": "state_rollback_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "ee261457",
+      "task_id": "nav_stop_003",
+      "condition": "state_rollback_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "2d0c3d34",
+      "task_id": "media_play_004",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "97fa99e8",
+      "task_id": "media_play_004",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "9a108391",
+      "task_id": "media_play_004",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "ac847cc7",
+      "task_id": "media_play_004",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "e3e7f5aa",
+      "task_id": "media_play_004",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "ebe87a40",
+      "task_id": "media_play_004",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "8af941c1",
+      "task_id": "media_play_004",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "964400bd",
+      "task_id": "media_play_004",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "e84ca4da",
+      "task_id": "media_play_004",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "932b079f",
+      "task_id": "media_play_004",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "3ff9de72",
+      "task_id": "media_next_005",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "a5febf1d",
+      "task_id": "media_next_005",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "4eb55ed5",
+      "task_id": "media_next_005",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "71274836",
+      "task_id": "media_next_005",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "bf86f150",
+      "task_id": "media_next_005",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "46007dff",
+      "task_id": "media_next_005",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "3440eddb",
+      "task_id": "media_next_005",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "f6130d62",
+      "task_id": "media_next_005",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "f0d80915",
+      "task_id": "media_next_005",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "96b0d0cd",
+      "task_id": "media_next_005",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "4be651b8",
+      "task_id": "media_volume_006",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "9f667769",
+      "task_id": "media_volume_006",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "1cd9906d",
+      "task_id": "media_volume_006",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "6024d671",
+      "task_id": "media_volume_006",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "60dd7591",
+      "task_id": "media_volume_006",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "d3af0bc0",
+      "task_id": "media_volume_006",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "dab17d54",
+      "task_id": "media_volume_006",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "7a27cf46",
+      "task_id": "media_volume_006",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "fd87d571",
+      "task_id": "media_volume_006",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "31793b9d",
+      "task_id": "media_volume_006",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "50ecffa3",
+      "task_id": "climate_temp_007",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "34167f7d",
+      "task_id": "climate_temp_007",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "96208453",
+      "task_id": "climate_temp_007",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "67c51933",
+      "task_id": "climate_temp_007",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "76f3d7a4",
+      "task_id": "climate_temp_007",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "ee860276",
+      "task_id": "climate_temp_007",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "eec2deb4",
+      "task_id": "climate_temp_007",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "dff8a5ef",
+      "task_id": "climate_temp_007",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "e6b6ccfe",
+      "task_id": "climate_temp_007",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "1e7762e9",
+      "task_id": "climate_temp_007",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "b966df54",
+      "task_id": "climate_ac_off_008",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "3bc3a6d8",
+      "task_id": "climate_ac_off_008",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "3994e3cf",
+      "task_id": "climate_ac_off_008",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "ad40b4ad",
+      "task_id": "climate_ac_off_008",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "39b99fa7",
+      "task_id": "climate_ac_off_008",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "9629e4b0",
+      "task_id": "climate_ac_off_008",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "3813b2bb",
+      "task_id": "climate_ac_off_008",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "f1e005bb",
+      "task_id": "climate_ac_off_008",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "50a2528c",
+      "task_id": "climate_ac_off_008",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "6b6b59a4",
+      "task_id": "climate_ac_off_008",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "37839b95",
+      "task_id": "climate_seat_heat_009",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "46113c33",
+      "task_id": "climate_seat_heat_009",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "8ee5aa4d",
+      "task_id": "climate_seat_heat_009",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "42d806e0",
+      "task_id": "climate_seat_heat_009",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "7c68447b",
+      "task_id": "climate_seat_heat_009",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "d1a7d2c4",
+      "task_id": "climate_seat_heat_009",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "7e60f906",
+      "task_id": "climate_seat_heat_009",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "ba1064c5",
+      "task_id": "climate_seat_heat_009",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "134b2cad",
+      "task_id": "climate_seat_heat_009",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "5f44a8c5",
+      "task_id": "climate_seat_heat_009",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "2dd40456",
+      "task_id": "phone_dial_010",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "586c6a4c",
+      "task_id": "phone_dial_010",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "afee3c5d",
+      "task_id": "phone_dial_010",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f423f0cc",
+      "task_id": "phone_dial_010",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "ea76c3cc",
+      "task_id": "phone_dial_010",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "efe77f65",
+      "task_id": "phone_dial_010",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "310bde7a",
+      "task_id": "phone_dial_010",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "e2bcce85",
+      "task_id": "phone_dial_010",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "540ba382",
+      "task_id": "phone_dial_010",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "b9ead042",
+      "task_id": "phone_dial_010",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "5d2fc3ea",
+      "task_id": "phone_hangup_011",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "2a787109",
+      "task_id": "phone_hangup_011",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "73b96bb7",
+      "task_id": "phone_hangup_011",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "8f7d777a",
+      "task_id": "phone_hangup_011",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "02583039",
+      "task_id": "phone_hangup_011",
+      "condition": "phantom_ack_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "c6cc5c71",
+      "task_id": "phone_hangup_011",
+      "condition": "phantom_ack_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "2b51a0b3",
+      "task_id": "phone_hangup_011",
+      "condition": "phantom_ack_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f77efeb4",
+      "task_id": "phone_hangup_011",
+      "condition": "state_rollback_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "deeddc9c",
+      "task_id": "phone_hangup_011",
+      "condition": "state_rollback_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "fe8984b1",
+      "task_id": "phone_hangup_011",
+      "condition": "state_rollback_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "06315ddc",
+      "task_id": "phone_add_contact_012",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "db43ae98",
+      "task_id": "phone_add_contact_012",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "cc25e540",
+      "task_id": "phone_add_contact_012",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "fa13ebad",
+      "task_id": "phone_add_contact_012",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "ebaca954",
+      "task_id": "phone_add_contact_012",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "e2a5d358",
+      "task_id": "phone_add_contact_012",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "71d05e42",
+      "task_id": "phone_add_contact_012",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "786bfb5f",
+      "task_id": "phone_add_contact_012",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "b3cb96fc",
+      "task_id": "phone_add_contact_012",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "f16ef0e3",
+      "task_id": "phone_add_contact_012",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "20cf697b",
+      "task_id": "msg_send_013",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d6d3995a",
+      "task_id": "msg_send_013",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "9ff4264c",
+      "task_id": "msg_send_013",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "defd3584",
+      "task_id": "msg_send_013",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "5f24b21a",
+      "task_id": "msg_send_013",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "bc32fb1c",
+      "task_id": "msg_send_013",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "1d5fdb18",
+      "task_id": "msg_send_013",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "51806f7a",
+      "task_id": "msg_send_013",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "9872671a",
+      "task_id": "msg_send_013",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "8d03d6c8",
+      "task_id": "msg_send_013",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "62b8fcf9",
+      "task_id": "msg_read_014",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "cdcfd4a8",
+      "task_id": "msg_read_014",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f9405047",
+      "task_id": "msg_read_014",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "3796719b",
+      "task_id": "msg_read_014",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "e4f569c7",
+      "task_id": "msg_read_014",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "74919b4e",
+      "task_id": "msg_read_014",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "ba171ef2",
+      "task_id": "msg_read_014",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "95ce17f5",
+      "task_id": "msg_read_014",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "92a69238",
+      "task_id": "msg_read_014",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "6287b6a0",
+      "task_id": "msg_read_014",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "b4ef05cb",
+      "task_id": "msg_delete_015",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "44d4021a",
+      "task_id": "msg_delete_015",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "18183e9f",
+      "task_id": "msg_delete_015",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "139ddba6",
+      "task_id": "msg_delete_015",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "059728b8",
+      "task_id": "msg_delete_015",
+      "condition": "phantom_ack_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "366a7cf8",
+      "task_id": "msg_delete_015",
+      "condition": "phantom_ack_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "b8057058",
+      "task_id": "msg_delete_015",
+      "condition": "phantom_ack_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "2d5effe9",
+      "task_id": "msg_delete_015",
+      "condition": "state_rollback_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "54f80eec",
+      "task_id": "msg_delete_015",
+      "condition": "state_rollback_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "f8b75638",
+      "task_id": "msg_delete_015",
+      "condition": "state_rollback_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "c88b4c23",
+      "task_id": "set_brightness_016",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "813cf869",
+      "task_id": "set_brightness_016",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "a98b1d7a",
+      "task_id": "set_brightness_016",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "72d45112",
+      "task_id": "set_brightness_016",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "8953f10e",
+      "task_id": "set_brightness_016",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "d8ce2d0d",
+      "task_id": "set_brightness_016",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "9827dad3",
+      "task_id": "set_brightness_016",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "f73b5790",
+      "task_id": "set_brightness_016",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "52bd11a1",
+      "task_id": "set_brightness_016",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "7ecc1069",
+      "task_id": "set_brightness_016",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "3ace6496",
+      "task_id": "set_wifi_017",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d7bc128e",
+      "task_id": "set_wifi_017",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d13fd65b",
+      "task_id": "set_wifi_017",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "c356a6e0",
+      "task_id": "set_wifi_017",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "764d5d8e",
+      "task_id": "set_wifi_017",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "2bcf62b0",
+      "task_id": "set_wifi_017",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "618e020b",
+      "task_id": "set_wifi_017",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "f0963ea2",
+      "task_id": "set_wifi_017",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "82a42aca",
+      "task_id": "set_wifi_017",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "fdf6173b",
+      "task_id": "set_wifi_017",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "33e705fe",
+      "task_id": "set_bluetooth_018",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "0185e8f9",
+      "task_id": "set_bluetooth_018",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "d42b8e10",
+      "task_id": "set_bluetooth_018",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "dc18cb22",
+      "task_id": "set_bluetooth_018",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "1b24fef3",
+      "task_id": "set_bluetooth_018",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "7ceee26c",
+      "task_id": "set_bluetooth_018",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "00ccf9a1",
+      "task_id": "set_bluetooth_018",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "9e8edc64",
+      "task_id": "set_bluetooth_018",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "c92b3e8d",
+      "task_id": "set_bluetooth_018",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "ec47d852",
+      "task_id": "set_bluetooth_018",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "db4707f0",
+      "task_id": "veh_sport_mode_019",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "4c571778",
+      "task_id": "veh_sport_mode_019",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "5cfdaf9a",
+      "task_id": "veh_sport_mode_019",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "285d236d",
+      "task_id": "veh_sport_mode_019",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "19e44916",
+      "task_id": "veh_sport_mode_019",
+      "condition": "phantom_ack_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "805fc648",
+      "task_id": "veh_sport_mode_019",
+      "condition": "phantom_ack_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "a9591e9b",
+      "task_id": "veh_sport_mode_019",
+      "condition": "phantom_ack_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "6f654d55",
+      "task_id": "veh_sport_mode_019",
+      "condition": "state_rollback_mild",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "77b6f10a",
+      "task_id": "veh_sport_mode_019",
+      "condition": "state_rollback_moderate",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "c3a674dd",
+      "task_id": "veh_sport_mode_019",
+      "condition": "state_rollback_severe",
+      "label": "api_preferred"
+    },
+    {
+      "event_id": "8ba3a48d",
+      "task_id": "veh_unlock_020",
+      "condition": "none_none",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "214112f6",
+      "task_id": "veh_unlock_020",
+      "condition": "stale_observation_mild",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "3eca074f",
+      "task_id": "veh_unlock_020",
+      "condition": "stale_observation_moderate",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "168f1f8f",
+      "task_id": "veh_unlock_020",
+      "condition": "stale_observation_severe",
+      "label": "consistent_pass"
+    },
+    {
+      "event_id": "2d884131",
+      "task_id": "veh_unlock_020",
+      "condition": "phantom_ack_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "099fa748",
+      "task_id": "veh_unlock_020",
+      "condition": "phantom_ack_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "582be755",
+      "task_id": "veh_unlock_020",
+      "condition": "phantom_ack_severe",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "b2250c7a",
+      "task_id": "veh_unlock_020",
+      "condition": "state_rollback_mild",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "82bd2046",
+      "task_id": "veh_unlock_020",
+      "condition": "state_rollback_moderate",
+      "label": "boundary_specific"
+    },
+    {
+      "event_id": "ba196edf",
+      "task_id": "veh_unlock_020",
+      "condition": "state_rollback_severe",
+      "label": "boundary_specific"
+    }
+  ]
+}

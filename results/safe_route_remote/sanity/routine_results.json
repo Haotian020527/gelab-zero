@@ -1,0 +1,1363 @@
+{
+  "results": [
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 71.8,
+                "eta_min": 107
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "api_only",
+      "run_idx": 1,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 13.3,
+                "eta_min": 19
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "api_only",
+      "run_idx": 2,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 75.5,
+                "eta_min": 113
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 60.2,
+                "eta_min": 90
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "hybrid",
+      "run_idx": 1,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 6.0,
+                "eta_min": 9
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "hybrid",
+      "run_idx": 2,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "机场",
+                "distance_km": 69.0,
+                "eta_min": 103
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1150,
+      "time_to_first_action_ms": 1150,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "gui_only",
+      "run_idx": 1,
+      "duration_ms": 1134,
+      "time_to_first_action_ms": 1134,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "gui_only",
+      "run_idx": 2,
+      "duration_ms": 1136,
+      "time_to_first_action_ms": 1136,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(navigation contains 机场)",
+            "(current_screen is navigation_route_preview)"
+          ],
+          "task_id": "nav_set_dest_001",
+          "prompt": "Set navigation destination to airport via API, verify route in GUI",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/navigation/set_destination",
+                "response": {
+                  "status": "ok",
+                  "destination": "机场",
+                  "distance_km": 66.4,
+                  "eta_min": 99
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "safe_route",
+      "run_idx": 1,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(navigation contains 机场)",
+            "(current_screen is navigation_route_preview)"
+          ],
+          "task_id": "nav_set_dest_001",
+          "prompt": "Set navigation destination to airport via API, verify route in GUI",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/navigation/set_destination",
+                "response": {
+                  "status": "ok",
+                  "destination": "机场",
+                  "distance_km": 39.9,
+                  "eta_min": 59
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "nav_set_dest_001",
+      "system": "safe_route",
+      "run_idx": 2,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(navigation contains 机场)",
+            "(current_screen is navigation_route_preview)"
+          ],
+          "task_id": "nav_set_dest_001",
+          "prompt": "Set navigation destination to airport via API, verify route in GUI",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/navigation/set_destination",
+                "response": {
+                  "status": "ok",
+                  "destination": "机场",
+                  "distance_km": 37.1,
+                  "eta_min": 55
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "api_only",
+      "run_idx": 1,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "api_only",
+      "run_idx": 2,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "hybrid",
+      "run_idx": 1,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "hybrid",
+      "run_idx": 2,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1318,
+      "time_to_first_action_ms": 1318,
+      "route": "gui_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "gui_only",
+      "run_idx": 1,
+      "duration_ms": 1322,
+      "time_to_first_action_ms": 1322,
+      "route": "gui_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "gui_only",
+      "run_idx": 2,
+      "duration_ms": 1294,
+      "time_to_first_action_ms": 1294,
+      "route": "gui_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(playing value_is true)",
+            "(current_track contains 夜曲)",
+            "(current_screen is media_playing)"
+          ],
+          "task_id": "media_play_004",
+          "prompt": "Play music from playlist via API, verify playback in GUI",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/media/play",
+                "response": {
+                  "status": "ok",
+                  "playing": true,
+                  "track": "夜曲"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "safe_route",
+      "run_idx": 1,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(playing value_is true)",
+            "(current_track contains 夜曲)",
+            "(current_screen is media_playing)"
+          ],
+          "task_id": "media_play_004",
+          "prompt": "Play music from playlist via API, verify playback in GUI",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/media/play",
+                "response": {
+                  "status": "ok",
+                  "playing": true,
+                  "track": "夜曲"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "media_play_004",
+      "system": "safe_route",
+      "run_idx": 2,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(playing value_is true)",
+            "(current_track contains 夜曲)",
+            "(current_screen is media_playing)"
+          ],
+          "task_id": "media_play_004",
+          "prompt": "Play music from playlist via API, verify playback in GUI",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/media/play",
+                "response": {
+                  "status": "ok",
+                  "playing": true,
+                  "track": "夜曲"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "api_only",
+      "run_idx": 1,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "api_only",
+      "run_idx": 2,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "hybrid",
+      "run_idx": 1,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "hybrid",
+      "run_idx": 2,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "张三",
+                "text": "会议改到下午3点",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1125,
+      "time_to_first_action_ms": 1125,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "gui_only",
+      "run_idx": 1,
+      "duration_ms": 1131,
+      "time_to_first_action_ms": 1131,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "gui_only",
+      "run_idx": 2,
+      "duration_ms": 1125,
+      "time_to_first_action_ms": 1125,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 116,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.send",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/send"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(conversations contains 会议改到下午3点)",
+            "(current_screen is messages_conversation)"
+          ],
+          "task_id": "msg_send_013",
+          "prompt": "Send a message via API, verify in conversation GUI",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/messages/send",
+                "response": {
+                  "status": "ok",
+                  "sent_to": "张三",
+                  "text": "会议改到下午3点",
+                  "notification": "消息已发送"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "safe_route",
+      "run_idx": 1,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.send",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/send"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(conversations contains 会议改到下午3点)",
+            "(current_screen is messages_conversation)"
+          ],
+          "task_id": "msg_send_013",
+          "prompt": "Send a message via API, verify in conversation GUI",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/messages/send",
+                "response": {
+                  "status": "ok",
+                  "sent_to": "张三",
+                  "text": "会议改到下午3点",
+                  "notification": "消息已发送"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "msg_send_013",
+      "system": "safe_route",
+      "run_idx": 2,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 116,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.send",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/send"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(conversations contains 会议改到下午3点)",
+            "(current_screen is messages_conversation)"
+          ],
+          "task_id": "msg_send_013",
+          "prompt": "Send a message via API, verify in conversation GUI",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/messages/send",
+                "response": {
+                  "status": "ok",
+                  "sent_to": "张三",
+                  "text": "会议改到下午3点",
+                  "notification": "消息已发送"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "api_only": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.3333333333333333,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0.3333333333333333,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    },
+    "hybrid": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.1111111111111111,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0.1111111111111111,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    },
+    "gui_only": {
+      "runs": 9,
+      "success_rate": 0.3333333333333333,
+      "mean_duration_ms": 1192.7777777777778,
+      "median_duration_ms": 1136,
+      "mean_time_to_first_action_ms": 1192.7777777777778,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 2073600,
+      "peak_vram_mb": 116
+    },
+    "safe_route": {
+      "runs": 9,
+      "success_rate": 1.0,
+      "mean_duration_ms": 1,
+      "median_duration_ms": 1,
+      "mean_time_to_first_action_ms": 1,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 116
+    }
+  }
+}

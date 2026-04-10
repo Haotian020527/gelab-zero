@@ -1,0 +1,68 @@
+{
+  "event_id": "15527a95",
+  "task_id": "ho_set_night_006",
+  "step_index": 9,
+  "pre_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_set_night_006/pre_9.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_set_night_006/hybrid_run0_post_9.png",
+  "action": "\u5207\u6362\u5230\u591c\u95f4\u6a21\u5f0f\uff0c\u964d\u4f4e\u4eae\u5ea6\u523030",
+  "postconditions": [
+    {
+      "subject": "display_mode",
+      "relation": "value_is",
+      "object": "night"
+    },
+    {
+      "subject": "brightness",
+      "relation": "value_is",
+      "object": "30"
+    }
+  ],
+  "emulator_snapshot_id": "transfer_ho_set_night_006_9",
+  "label": "api_preferred",
+  "fault_type": "state_rollback",
+  "fault_severity": "severe",
+  "timestamp_pre": 1775621310.7926505,
+  "timestamp_post": 1775621371.9933505,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      3580,
+      3585,
+      3594
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      532,
+      532,
+      529
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      15664,
+      15686,
+      15678
+    ]
+  }
+}

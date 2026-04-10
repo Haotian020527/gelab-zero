@@ -1,0 +1,68 @@
+{
+  "event_id": "20cf697b",
+  "task_id": "msg_send_013",
+  "step_index": 0,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/msg_send_013/pre_0.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/msg_send_013/hybrid_run0_post_0.png",
+  "action": "\u53d1\u9001\u4e00\u6761\u77ed\u4fe1\u7ed9\u5f20\u4e09\uff0c\u5185\u5bb9\u4e3a'\u4f1a\u8bae\u6539\u5230\u4e0b\u53483\u70b9'",
+  "postconditions": [
+    {
+      "subject": "conversations",
+      "relation": "contains",
+      "object": "\u4f1a\u8bae\u6539\u5230\u4e0b\u53483\u70b9"
+    },
+    {
+      "subject": "current_screen",
+      "relation": "is",
+      "object": "messages_conversation"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_msg_send_013_0",
+  "label": "consistent_pass",
+  "fault_type": "none",
+  "fault_severity": "none",
+  "timestamp_pre": 1775537328.2033958,
+  "timestamp_post": 1775537338.2412143,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      533,
+      531,
+      533
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      529,
+      531,
+      538
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1678,
+      1684,
+      1666
+    ]
+  }
+}

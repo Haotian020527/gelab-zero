@@ -1,0 +1,68 @@
+{
+  "total_events": 200,
+  "total_failures": 102,
+  "boundary_specific_count": 54,
+  "prevalence_pct": 52.94,
+  "c1_passed": true,
+  "label_distribution": {
+    "consistent_pass": 98,
+    "api_preferred": 48,
+    "boundary_specific": 54
+  },
+  "label_percentages": {
+    "consistent_pass": 49.0,
+    "api_preferred": 24.0,
+    "boundary_specific": 27.0
+  },
+  "by_fault_type": {
+    "none": {
+      "consistent_pass": 20
+    },
+    "stale_observation": {
+      "consistent_pass": 60
+    },
+    "phantom_ack": {
+      "api_preferred": 24,
+      "consistent_pass": 9,
+      "boundary_specific": 27
+    },
+    "state_rollback": {
+      "api_preferred": 24,
+      "consistent_pass": 9,
+      "boundary_specific": 27
+    }
+  },
+  "by_task_prefix": {
+    "nav": {
+      "consistent_pass": 18,
+      "api_preferred": 12
+    },
+    "media": {
+      "consistent_pass": 12,
+      "boundary_specific": 18
+    },
+    "climate": {
+      "consistent_pass": 12,
+      "api_preferred": 12,
+      "boundary_specific": 6
+    },
+    "phone": {
+      "consistent_pass": 18,
+      "api_preferred": 12
+    },
+    "msg": {
+      "consistent_pass": 18,
+      "api_preferred": 6,
+      "boundary_specific": 6
+    },
+    "set": {
+      "consistent_pass": 12,
+      "boundary_specific": 18
+    },
+    "veh": {
+      "consistent_pass": 8,
+      "api_preferred": 6,
+      "boundary_specific": 6
+    }
+  }
+}

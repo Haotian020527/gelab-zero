@@ -1,0 +1,63 @@
+{
+  "event_id": "d1a7d2c4",
+  "task_id": "climate_seat_heat_009",
+  "step_index": 5,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/climate_seat_heat_009/pre_5.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/climate_seat_heat_009/hybrid_run0_post_5.png",
+  "action": "\u6253\u5f00\u9a7e\u9a76\u5458\u5ea7\u6905\u52a0\u70ed\u81f3\u6700\u9ad8\u6863",
+  "postconditions": [
+    {
+      "subject": "seat_heating_driver",
+      "relation": "value_is",
+      "object": "3"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_climate_seat_heat_009_5",
+  "label": "api_preferred",
+  "fault_type": "phantom_ack",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775536498.9668236,
+  "timestamp_post": 1775536509.2496204,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      581,
+      581,
+      579
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      582,
+      582,
+      582
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1656,
+      1666,
+      1656
+    ]
+  }
+}

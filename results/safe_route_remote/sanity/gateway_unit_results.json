@@ -1,0 +1,100 @@
+{
+  "schema": {
+    "version": "1.0",
+    "required_fields": [
+      "intent",
+      "risk_zone",
+      "required_signals",
+      "required_2fa",
+      "allowed_api_paths",
+      "gui_fallback_policy",
+      "postconditions"
+    ],
+    "risk_zones": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "gui_fallback_policies": [
+      "allow",
+      "challenge",
+      "deny"
+    ]
+  },
+  "checks": {
+    "schema_version": true,
+    "green_allows": true,
+    "red_blocks_on_bad_gear": true,
+    "red_requires_2fa": true,
+    "red_allows_after_2fa": true,
+    "yellow_challenges_without_confirmation": true,
+    "yellow_allows_with_confirmation": true
+  },
+  "overall": "PASS",
+  "contracts": {
+    "green": {
+      "schema_version": "1.0",
+      "intent": "media.play",
+      "risk_zone": "green",
+      "required_signals": {},
+      "required_2fa": false,
+      "allowed_api_paths": [
+        "/api/media/play"
+      ],
+      "gui_fallback_policy": "allow",
+      "postconditions": [
+        "(playing value_is true)",
+        "(current_track contains 夜曲)",
+        "(current_screen is media_playing)"
+      ],
+      "task_id": "media_play_004",
+      "prompt": "Play music from playlist via API, verify playback in GUI",
+      "metadata": {
+        "category": "media",
+        "app": "media"
+      }
+    },
+    "red": {
+      "schema_version": "1.0",
+      "intent": "vehicle.ota_start",
+      "risk_zone": "red",
+      "required_signals": {
+        "vehicle.gear": "P",
+        "vehicle.speed_kmh": 0,
+        "vehicle.battery_percent": ">=30"
+      },
+      "required_2fa": true,
+      "allowed_api_paths": [
+        "/api/vehicle/ota_start"
+      ],
+      "gui_fallback_policy": "deny",
+      "postconditions": [],
+      "task_id": "red_ota_seed",
+      "prompt": "Start OTA update now",
+      "metadata": {
+        "category": null,
+        "app": null
+      }
+    },
+    "yellow": {
+      "schema_version": "1.0",
+      "intent": "vehicle.unlock_doors",
+      "risk_zone": "yellow",
+      "required_signals": {
+        "vehicle.speed_kmh": 0
+      },
+      "required_2fa": false,
+      "allowed_api_paths": [
+        "/api/vehicle/unlock_doors"
+      ],
+      "gui_fallback_policy": "challenge",
+      "postconditions": [],
+      "task_id": "yellow_unlock_seed",
+      "prompt": "Unlock the doors",
+      "metadata": {
+        "category": null,
+        "app": null
+      }
+    }
+  }
+}

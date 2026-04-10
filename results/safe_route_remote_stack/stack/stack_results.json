@@ -1,0 +1,113 @@
+{
+  "stage": "safe_route_stack",
+  "timestamp": "2026-04-09T09:22:38",
+  "models": {
+    "vlm": "Qwen/Qwen2-VL-7B-Instruct",
+    "stt": "facebook/wav2vec2-base-960h",
+    "tts": "facebook/mms-tts-eng",
+    "device": "cuda:0"
+  },
+  "load_metrics": {
+    "device": "cuda:0",
+    "vlm_load_ms": 21592,
+    "after_vlm_vram_mb": 17637,
+    "stt_load_ms": 43901,
+    "after_stt_vram_mb": 17639,
+    "tts_load_ms": 4798,
+    "after_tts_vram_mb": 17671,
+    "warmup": {
+      "stt_ms": 108,
+      "tts_ms": 215,
+      "vlm_ms": 771
+    },
+    "after_warmup_vram_mb": 17701
+  },
+  "results": [
+    {
+      "workload": "routine_api",
+      "run_idx": 0,
+      "task_id": "nav_set_dest_001",
+      "route": "api_first",
+      "task_latency_ms": 1,
+      "cycle_latency_ms": 60,
+      "stt_latency_ms": 3,
+      "tts_latency_ms": 55,
+      "vlm_latency_ms": null,
+      "status": "allow"
+    },
+    {
+      "workload": "fallback_gui",
+      "run_idx": 0,
+      "task_id": "set_bluetooth_018",
+      "route": "gui_fallback",
+      "task_latency_ms": 1163,
+      "cycle_latency_ms": 1961,
+      "stt_latency_ms": 6,
+      "tts_latency_ms": 123,
+      "vlm_latency_ms": 667,
+      "status": "allow"
+    },
+    {
+      "workload": "blocked_safety",
+      "run_idx": 0,
+      "task_id": "red_ota_bad_gear_block",
+      "route": "blocked",
+      "task_latency_ms": 0,
+      "cycle_latency_ms": 38,
+      "stt_latency_ms": 3,
+      "tts_latency_ms": 34,
+      "vlm_latency_ms": null,
+      "status": "block"
+    },
+    {
+      "workload": "routine_api",
+      "run_idx": 1,
+      "task_id": "nav_set_dest_001",
+      "route": "api_first",
+      "task_latency_ms": 1,
+      "cycle_latency_ms": 35,
+      "stt_latency_ms": 3,
+      "tts_latency_ms": 30,
+      "vlm_latency_ms": null,
+      "status": "allow"
+    },
+    {
+      "workload": "fallback_gui",
+      "run_idx": 1,
+      "task_id": "set_bluetooth_018",
+      "route": "gui_fallback",
+      "task_latency_ms": 1134,
+      "cycle_latency_ms": 1848,
+      "stt_latency_ms": 6,
+      "tts_latency_ms": 31,
+      "vlm_latency_ms": 675,
+      "status": "allow"
+    },
+    {
+      "workload": "blocked_safety",
+      "run_idx": 1,
+      "task_id": "red_ota_bad_gear_block",
+      "route": "blocked",
+      "task_latency_ms": 0,
+      "cycle_latency_ms": 35,
+      "stt_latency_ms": 3,
+      "tts_latency_ms": 31,
+      "vlm_latency_ms": null,
+      "status": "block"
+    }
+  ],
+  "summary": {
+    "peak_vram_mb": 17701,
+    "avg_vram_mb": 13205.674927113703,
+    "sampler_points": 686,
+    "oom_count": 0,
+    "mean_user_visible_latency_ms": 662.8333333333334,
+    "api_task_ttfa_ms": 1,
+    "fallback_task_latency_ms": 1904.5,
+    "blocked_task_latency_ms": 36.5,
+    "routine_route": "api_first",
+    "fallback_route": "gui_fallback",
+    "blocked_route": "blocked"
+  },
+  "overall": "PASS"
+}

@@ -1,0 +1,2697 @@
+{
+  "stage": "safe_route_generalization",
+  "timestamp": "2026-04-09T10:26:26",
+  "held_out_cases": 10,
+  "api_gap_cases": 7,
+  "held_out_systems": [
+    "api_only",
+    "hybrid",
+    "safe_route",
+    "gui_only"
+  ],
+  "api_gap_systems": [
+    "no_fallback",
+    "full_screen_fallback",
+    "contract_scoped_fallback"
+  ],
+  "held_out_results": [
+    {
+      "case_id": "gen_nav_recent",
+      "task_id": "ho_nav_recent_001",
+      "category": "navigation",
+      "prompt": "Start guidance to home from the recent destinations list.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "家",
+                "distance_km": 52.4,
+                "eta_min": 78
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/navigation/start",
+              "response": {
+                "status": "ok",
+                "message": "开始导航到 家"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_nav_recent",
+      "task_id": "ho_nav_recent_001",
+      "category": "navigation",
+      "prompt": "Start guidance to home from the recent destinations list.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/navigation/set_destination",
+              "response": {
+                "status": "ok",
+                "destination": "家",
+                "distance_km": 61.6,
+                "eta_min": 92
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/navigation/start",
+              "response": {
+                "status": "ok",
+                "message": "开始导航到 家"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_nav_recent",
+      "task_id": "ho_nav_recent_001",
+      "category": "navigation",
+      "prompt": "Start guidance to home from the recent destinations list.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 2,
+      "time_to_first_action_ms": 2,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination",
+            "/api/navigation/start"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(destination contains 家)",
+            "(is_navigating value_is true)"
+          ],
+          "task_id": "ho_nav_recent_001",
+          "prompt": "Start guidance to home from the recent destinations list.",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/navigation/set_destination",
+                "response": {
+                  "status": "ok",
+                  "destination": "家",
+                  "distance_km": 20.2,
+                  "eta_min": 30
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/navigation/start",
+                "response": {
+                  "status": "ok",
+                  "message": "开始导航到 家"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_nav_recent",
+      "task_id": "ho_nav_recent_001",
+      "category": "navigation",
+      "prompt": "Start guidance to home from the recent destinations list.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1773,
+      "time_to_first_action_ms": 1773,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 131,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_radio",
+      "task_id": "ho_media_radio_002",
+      "category": "media",
+      "prompt": "Switch the audio source to FM and tune to 103.9.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/radio",
+              "response": {
+                "status": "ok",
+                "frequency": 103.9
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_radio",
+      "task_id": "ho_media_radio_002",
+      "category": "media",
+      "prompt": "Switch the audio source to FM and tune to 103.9.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/radio",
+              "response": {
+                "status": "ok",
+                "frequency": 103.9
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_radio",
+      "task_id": "ho_media_radio_002",
+      "category": "media",
+      "prompt": "Switch the audio source to FM and tune to 103.9.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.radio",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/radio"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(source value_is radio)",
+            "(radio_frequency value_is 103.9)"
+          ],
+          "task_id": "ho_media_radio_002",
+          "prompt": "Switch the audio source to FM and tune to 103.9.",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/media/radio",
+                "response": {
+                  "status": "ok",
+                  "frequency": 103.9
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_radio",
+      "task_id": "ho_media_radio_002",
+      "category": "media",
+      "prompt": "Switch the audio source to FM and tune to 103.9.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 8828,
+      "time_to_first_action_ms": 8828,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 131,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_dual",
+      "task_id": "ho_climate_dual_003",
+      "category": "climate",
+      "prompt": "Make the driver side 22 and the passenger side 26.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/climate/temperature",
+              "response": {
+                "status": "ok",
+                "zone": "driver",
+                "temperature": 22.0
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/climate/temperature",
+              "response": {
+                "status": "ok",
+                "zone": "passenger",
+                "temperature": 26.0
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_dual",
+      "task_id": "ho_climate_dual_003",
+      "category": "climate",
+      "prompt": "Make the driver side 22 and the passenger side 26.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/climate/temperature",
+              "response": {
+                "status": "ok",
+                "zone": "driver",
+                "temperature": 22.0
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/climate/temperature",
+              "response": {
+                "status": "ok",
+                "zone": "passenger",
+                "temperature": 26.0
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_dual",
+      "task_id": "ho_climate_dual_003",
+      "category": "climate",
+      "prompt": "Make the driver side 22 and the passenger side 26.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 131,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "climate.temperature",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/climate/temperature",
+            "/api/climate/temperature"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(temperature_driver value_is 22.0)",
+            "(temperature_passenger value_is 26.0)"
+          ],
+          "task_id": "ho_climate_dual_003",
+          "prompt": "Make the driver side 22 and the passenger side 26.",
+          "metadata": {
+            "category": "climate",
+            "app": "climate"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/climate/temperature",
+                "response": {
+                  "status": "ok",
+                  "zone": "driver",
+                  "temperature": 22.0
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/climate/temperature",
+                "response": {
+                  "status": "ok",
+                  "zone": "passenger",
+                  "temperature": 26.0
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_dual",
+      "task_id": "ho_climate_dual_003",
+      "category": "climate",
+      "prompt": "Make the driver side 22 and the passenger side 26.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 17131,
+      "time_to_first_action_ms": 17131,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_phone_edit",
+      "task_id": "ho_phone_edit_004",
+      "category": "phone",
+      "prompt": "Update Zhang San's phone number to 13900139999.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/phone/contacts/edit",
+              "response": {
+                "status": "ok",
+                "contact": {
+                  "name": "张三",
+                  "number": "13900139999"
+                }
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_phone_edit",
+      "task_id": "ho_phone_edit_004",
+      "category": "phone",
+      "prompt": "Update Zhang San's phone number to 13900139999.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/phone/contacts/edit",
+              "response": {
+                "status": "ok",
+                "contact": {
+                  "name": "张三",
+                  "number": "13900139999"
+                }
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_phone_edit",
+      "task_id": "ho_phone_edit_004",
+      "category": "phone",
+      "prompt": "Update Zhang San's phone number to 13900139999.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 2,
+      "time_to_first_action_ms": 2,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "phone.contacts",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/phone/contacts/edit"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(contacts contains 13900139999)"
+          ],
+          "task_id": "ho_phone_edit_004",
+          "prompt": "Update Zhang San's phone number to 13900139999.",
+          "metadata": {
+            "category": "phone",
+            "app": "phone"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/phone/contacts/edit",
+                "response": {
+                  "status": "ok",
+                  "contact": {
+                    "name": "张三",
+                    "number": "13900139999"
+                  }
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_phone_edit",
+      "task_id": "ho_phone_edit_004",
+      "category": "phone",
+      "prompt": "Update Zhang San's phone number to 13900139999.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 10825,
+      "time_to_first_action_ms": 10825,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_msg_multi",
+      "task_id": "ho_msg_multi_005",
+      "category": "messages",
+      "prompt": "Send test messages to Li Si and Wang Wu.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 2,
+      "time_to_first_action_ms": 2,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "李四",
+                "text": "测试消息一",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "王五",
+                "text": "测试消息二",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_msg_multi",
+      "task_id": "ho_msg_multi_005",
+      "category": "messages",
+      "prompt": "Send test messages to Li Si and Wang Wu.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "李四",
+                "text": "测试消息一",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/messages/send",
+              "response": {
+                "status": "ok",
+                "sent_to": "王五",
+                "text": "测试消息二",
+                "notification": "消息已发送"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_msg_multi",
+      "task_id": "ho_msg_multi_005",
+      "category": "messages",
+      "prompt": "Send test messages to Li Si and Wang Wu.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 3,
+      "time_to_first_action_ms": 3,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.send",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/send",
+            "/api/messages/send"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(conversations contains 李四)",
+            "(conversations contains 测试消息)"
+          ],
+          "task_id": "ho_msg_multi_005",
+          "prompt": "Send test messages to Li Si and Wang Wu.",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/messages/send",
+                "response": {
+                  "status": "ok",
+                  "sent_to": "李四",
+                  "text": "测试消息一",
+                  "notification": "消息已发送"
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/messages/send",
+                "response": {
+                  "status": "ok",
+                  "sent_to": "王五",
+                  "text": "测试消息二",
+                  "notification": "消息已发送"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_msg_multi",
+      "task_id": "ho_msg_multi_005",
+      "category": "messages",
+      "prompt": "Send test messages to Li Si and Wang Wu.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1757,
+      "time_to_first_action_ms": 1757,
+      "route": "gui_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_set_night",
+      "task_id": "ho_set_night_006",
+      "category": "settings",
+      "prompt": "Put the display into night mode and dim it to 30.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/settings/display_mode",
+              "response": {
+                "status": "ok",
+                "display_mode": "night"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/settings/brightness",
+              "response": {
+                "status": "ok",
+                "brightness": 30
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_set_night",
+      "task_id": "ho_set_night_006",
+      "category": "settings",
+      "prompt": "Put the display into night mode and dim it to 30.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/settings/display_mode",
+              "response": {
+                "status": "ok",
+                "display_mode": "night"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/settings/brightness",
+              "response": {
+                "status": "ok",
+                "brightness": 30
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_set_night",
+      "task_id": "ho_set_night_006",
+      "category": "settings",
+      "prompt": "Put the display into night mode and dim it to 30.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "settings.display_mode",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/settings/display_mode",
+            "/api/settings/brightness"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(display_mode value_is night)",
+            "(brightness value_is 30)"
+          ],
+          "task_id": "ho_set_night_006",
+          "prompt": "Put the display into night mode and dim it to 30.",
+          "metadata": {
+            "category": "settings",
+            "app": "settings"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/settings/display_mode",
+                "response": {
+                  "status": "ok",
+                  "display_mode": "night"
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/settings/brightness",
+                "response": {
+                  "status": "ok",
+                  "brightness": 30
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_set_night",
+      "task_id": "ho_set_night_006",
+      "category": "settings",
+      "prompt": "Put the display into night mode and dim it to 30.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 15135,
+      "time_to_first_action_ms": 15135,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_eco",
+      "task_id": "ho_veh_eco_007",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: switch into eco drive mode and turn on the low beams.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case requiring explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/vehicle/drive_mode",
+              "response": {
+                "status": "ok",
+                "drive_mode": "eco"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/vehicle/headlights",
+              "response": {
+                "status": "ok",
+                "headlights": "low"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_eco",
+      "task_id": "ho_veh_eco_007",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: switch into eco drive mode and turn on the low beams.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 2,
+      "time_to_first_action_ms": 2,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case requiring explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/vehicle/drive_mode",
+              "response": {
+                "status": "ok",
+                "drive_mode": "eco"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/vehicle/headlights",
+              "response": {
+                "status": "ok",
+                "headlights": "low"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_eco",
+      "task_id": "ho_veh_eco_007",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: switch into eco drive mode and turn on the low beams.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 2,
+      "time_to_first_action_ms": 2,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case requiring explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "vehicle.set_drive_mode",
+          "risk_zone": "yellow",
+          "required_signals": {
+            "vehicle.speed_kmh": 0
+          },
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/vehicle/drive_mode",
+            "/api/vehicle/headlights"
+          ],
+          "gui_fallback_policy": "challenge",
+          "postconditions": [
+            "(drive_mode value_is eco)",
+            "(headlights value_is low)"
+          ],
+          "task_id": "ho_veh_eco_007",
+          "prompt": "Driver confirmed: switch into eco drive mode and turn on the low beams.",
+          "metadata": {
+            "category": "vehicle",
+            "app": "vehicle"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {
+            "vehicle.speed_kmh": {
+              "expected": 0,
+              "actual": 0,
+              "passed": true
+            }
+          },
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/vehicle/drive_mode",
+                "response": {
+                  "status": "ok",
+                  "drive_mode": "eco"
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/vehicle/headlights",
+                "response": {
+                  "status": "ok",
+                  "headlights": "low"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_eco",
+      "task_id": "ho_veh_eco_007",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: switch into eco drive mode and turn on the low beams.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 9460,
+      "time_to_first_action_ms": 9460,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case requiring explicit confirmation.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_defrost",
+      "task_id": "ho_climate_defrost_008",
+      "category": "climate",
+      "prompt": "Enable the rear defroster and crank the fan to maximum.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/climate/rear_defrost",
+              "response": {
+                "status": "ok",
+                "rear_defrost": true
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/climate/fan_speed",
+              "response": {
+                "status": "ok",
+                "fan_speed": 7
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_defrost",
+      "task_id": "ho_climate_defrost_008",
+      "category": "climate",
+      "prompt": "Enable the rear defroster and crank the fan to maximum.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/climate/rear_defrost",
+              "response": {
+                "status": "ok",
+                "rear_defrost": true
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/climate/fan_speed",
+              "response": {
+                "status": "ok",
+                "fan_speed": 7
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_defrost",
+      "task_id": "ho_climate_defrost_008",
+      "category": "climate",
+      "prompt": "Enable the rear defroster and crank the fan to maximum.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 3,
+      "time_to_first_action_ms": 3,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "climate.rear_defrost",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/climate/rear_defrost",
+            "/api/climate/fan_speed"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(rear_defrost value_is true)",
+            "(fan_speed value_is 7)"
+          ],
+          "task_id": "ho_climate_defrost_008",
+          "prompt": "Enable the rear defroster and crank the fan to maximum.",
+          "metadata": {
+            "category": "climate",
+            "app": "climate"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/climate/rear_defrost",
+                "response": {
+                  "status": "ok",
+                  "rear_defrost": true
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/climate/fan_speed",
+                "response": {
+                  "status": "ok",
+                  "fan_speed": 7
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_climate_defrost",
+      "task_id": "ho_climate_defrost_008",
+      "category": "climate",
+      "prompt": "Enable the rear defroster and crank the fan to maximum.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 13138,
+      "time_to_first_action_ms": 13138,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_window",
+      "task_id": "ho_veh_window_009",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: open the driver's window halfway and pop the trunk.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case combining window and trunk actions.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/vehicle/window",
+              "response": {
+                "status": "ok",
+                "window": "fl",
+                "position": 50
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/vehicle/trunk",
+              "response": {
+                "status": "ok",
+                "trunk_open": true
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_window",
+      "task_id": "ho_veh_window_009",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: open the driver's window halfway and pop the trunk.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case combining window and trunk actions.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/vehicle/window",
+              "response": {
+                "status": "ok",
+                "window": "fl",
+                "position": 50
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/vehicle/trunk",
+              "response": {
+                "status": "ok",
+                "trunk_open": true
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_window",
+      "task_id": "ho_veh_window_009",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: open the driver's window halfway and pop the trunk.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case combining window and trunk actions.",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "vehicle.set_window",
+          "risk_zone": "yellow",
+          "required_signals": {
+            "vehicle.speed_kmh": 0
+          },
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/vehicle/window",
+            "/api/vehicle/trunk"
+          ],
+          "gui_fallback_policy": "challenge",
+          "postconditions": [
+            "(trunk_open value_is true)"
+          ],
+          "task_id": "ho_veh_window_009",
+          "prompt": "Driver confirmed: open the driver's window halfway and pop the trunk.",
+          "metadata": {
+            "category": "vehicle",
+            "app": "vehicle"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {
+            "vehicle.speed_kmh": {
+              "expected": 0,
+              "actual": 0,
+              "passed": true
+            }
+          },
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 1,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/vehicle/window",
+                "response": {
+                  "status": "ok",
+                  "window": "fl",
+                  "position": 50
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/vehicle/trunk",
+                "response": {
+                  "status": "ok",
+                  "trunk_open": true
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_vehicle_window",
+      "task_id": "ho_veh_window_009",
+      "category": "vehicle",
+      "prompt": "Driver confirmed: open the driver's window halfway and pop the trunk.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 15135,
+      "time_to_first_action_ms": 15135,
+      "route": "gui_only",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Held-out yellow allow-case combining window and trunk actions.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_prev",
+      "task_id": "ho_media_prev_010",
+      "category": "media",
+      "prompt": "Start playback, then jump back to the previous track.",
+      "system": "api_only",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "api_only",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/media/previous",
+              "response": {
+                "status": "ok",
+                "track": "青花瓷"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_prev",
+      "task_id": "ho_media_prev_010",
+      "category": "media",
+      "prompt": "Start playback, then jump back to the previous track.",
+      "system": "hybrid",
+      "run_idx": 0,
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "hybrid",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "hybrid",
+        "api_result": {
+          "status": "success",
+          "results": [
+            {
+              "path": "/api/media/play",
+              "response": {
+                "status": "ok",
+                "playing": true,
+                "track": "夜曲"
+              },
+              "status": "ok"
+            },
+            {
+              "path": "/api/media/previous",
+              "response": {
+                "status": "ok",
+                "track": "青花瓷"
+              },
+              "status": "ok"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_prev",
+      "task_id": "ho_media_prev_010",
+      "category": "media",
+      "prompt": "Start playback, then jump back to the previous track.",
+      "system": "safe_route",
+      "run_idx": 0,
+      "duration_ms": 1,
+      "time_to_first_action_ms": 1,
+      "route": "api_first",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play",
+            "/api/media/previous"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(playing value_is true)",
+            "(current_track contains 青花瓷)"
+          ],
+          "task_id": "ho_media_prev_010",
+          "prompt": "Start playback, then jump back to the previous track.",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "api_first",
+        "elapsed_ms": 0,
+        "execution_result": {
+          "status": "success",
+          "mode": "api_only",
+          "api_result": {
+            "status": "success",
+            "results": [
+              {
+                "path": "/api/media/play",
+                "response": {
+                  "status": "ok",
+                  "playing": true,
+                  "track": "夜曲"
+                },
+                "status": "ok"
+              },
+              {
+                "path": "/api/media/previous",
+                "response": {
+                  "status": "ok",
+                  "track": "青花瓷"
+                },
+                "status": "ok"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_media_prev",
+      "task_id": "ho_media_prev_010",
+      "category": "media",
+      "prompt": "Start playback, then jump back to the previous track.",
+      "system": "gui_only",
+      "run_idx": 0,
+      "duration_ms": 1744,
+      "time_to_first_action_ms": 1744,
+      "route": "gui_only",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    }
+  ],
+  "held_out_summary": {
+    "api_only": {
+      "runs": 10,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.8,
+      "median_duration_ms": 1.0,
+      "mean_time_to_first_action_ms": 0.8,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 134
+    },
+    "hybrid": {
+      "runs": 10,
+      "success_rate": 1.0,
+      "mean_duration_ms": 0.8,
+      "median_duration_ms": 1.0,
+      "mean_time_to_first_action_ms": 0.8,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 134
+    },
+    "safe_route": {
+      "runs": 10,
+      "success_rate": 1.0,
+      "mean_duration_ms": 1.7,
+      "median_duration_ms": 1.5,
+      "mean_time_to_first_action_ms": 1.7,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 134
+    },
+    "gui_only": {
+      "runs": 10,
+      "success_rate": 0.2,
+      "mean_duration_ms": 9492.6,
+      "median_duration_ms": 10142.5,
+      "mean_time_to_first_action_ms": 9492.6,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 2073600,
+      "peak_vram_mb": 134
+    }
+  },
+  "api_gap_results": [
+    {
+      "case_id": "gen_gap_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "full_screen_fallback",
+      "duration_ms": 2373,
+      "time_to_first_action_ms": 2373,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_navigation",
+      "task_id": "nav_stop_003",
+      "category": "navigation",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 2367,
+      "time_to_first_action_ms": 2367,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "navigation.set_destination",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/navigation/set_destination",
+            "/api/navigation/start",
+            "/api/navigation/stop"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(is_navigating value_is false)",
+            "(current_screen is navigation_home)"
+          ],
+          "task_id": "nav_stop_003",
+          "prompt": "Back out of route guidance and return to the map landing screen.",
+          "metadata": {
+            "category": "navigation",
+            "app": "navigation"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 2366,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "full_screen_fallback",
+      "duration_ms": 1753,
+      "time_to_first_action_ms": 1753,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_media",
+      "task_id": "media_next_005",
+      "category": "media",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 2010,
+      "time_to_first_action_ms": 2010,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "media.play",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/media/play",
+            "/api/media/next"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(current_track contains 晴天)",
+            "(playing value_is true)"
+          ],
+          "task_id": "media_next_005",
+          "prompt": "Jump forward by one track.",
+          "metadata": {
+            "category": "media",
+            "app": "media"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 2009,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "full_screen_fallback",
+      "duration_ms": 1130,
+      "time_to_first_action_ms": 1130,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_climate",
+      "task_id": "climate_ac_off_008",
+      "category": "climate",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1137,
+      "time_to_first_action_ms": 1137,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "climate.toggle_ac",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/climate/toggle_ac"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(ac_on value_is false)"
+          ],
+          "task_id": "climate_ac_off_008",
+          "prompt": "Shut the A/C down.",
+          "metadata": {
+            "category": "climate",
+            "app": "climate"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1136,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "full_screen_fallback",
+      "duration_ms": 7468,
+      "time_to_first_action_ms": 7468,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_phone",
+      "task_id": "phone_hangup_011",
+      "category": "phone",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 7448,
+      "time_to_first_action_ms": 7448,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "phone.dial",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/phone/dial",
+            "/api/phone/hangup"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(in_call value_is false)",
+            "(current_screen is phone_home)"
+          ],
+          "task_id": "phone_hangup_011",
+          "prompt": "Hang up the live call.",
+          "metadata": {
+            "category": "phone",
+            "app": "phone"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 7447,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "full_screen_fallback",
+      "duration_ms": 1157,
+      "time_to_first_action_ms": 1157,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_messages",
+      "task_id": "msg_read_014",
+      "category": "messages",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1145,
+      "time_to_first_action_ms": 1145,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "messages.read",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/messages/read"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(message_status value_is read)"
+          ],
+          "task_id": "msg_read_014",
+          "prompt": "Open that chat thread and mark it as read.",
+          "metadata": {
+            "category": "messages",
+            "app": "messages"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1144,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "full_screen_fallback",
+      "duration_ms": 1138,
+      "time_to_first_action_ms": 1138,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_settings",
+      "task_id": "set_bluetooth_018",
+      "category": "settings",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1142,
+      "time_to_first_action_ms": 1142,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {},
+      "notes": "",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "settings.toggle_bluetooth",
+          "risk_zone": "green",
+          "required_signals": {},
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/settings/toggle_bluetooth"
+          ],
+          "gui_fallback_policy": "allow",
+          "postconditions": [
+            "(bluetooth_on value_is false)",
+            "(bluetooth_status value_is disabled)"
+          ],
+          "task_id": "set_bluetooth_018",
+          "prompt": "Turn Bluetooth off from the settings page.",
+          "metadata": {
+            "category": "settings",
+            "app": "settings"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {},
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1141,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "no_fallback",
+      "duration_ms": 0,
+      "time_to_first_action_ms": 0,
+      "route": "no_fallback",
+      "validator_outcome": "failure",
+      "peak_vram_mb": 134,
+      "screenshot_count": 0,
+      "vision_pixels_estimate": 0,
+      "fallback_invoked": false,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone fallback case with a paraphrased confirmation request.",
+      "execution_status": "blocked",
+      "raw_result": {
+        "status": "blocked",
+        "reason": "api_missing_no_fallback"
+      }
+    },
+    {
+      "case_id": "gen_gap_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "full_screen_fallback",
+      "duration_ms": 1129,
+      "time_to_first_action_ms": 1129,
+      "route": "full_screen_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 2073600,
+      "fallback_invoked": true,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone fallback case with a paraphrased confirmation request.",
+      "execution_status": "success",
+      "raw_result": {
+        "status": "success",
+        "mode": "gui_only",
+        "gui_result": {
+          "status": "success"
+        }
+      }
+    },
+    {
+      "case_id": "gen_gap_vehicle",
+      "task_id": "veh_unlock_020",
+      "category": "vehicle",
+      "system": "contract_scoped_fallback",
+      "duration_ms": 1133,
+      "time_to_first_action_ms": 1133,
+      "route": "gui_fallback",
+      "validator_outcome": "success",
+      "peak_vram_mb": 134,
+      "screenshot_count": 1,
+      "vision_pixels_estimate": 153600,
+      "fallback_invoked": true,
+      "auth_context": {
+        "confirmation_provided": true
+      },
+      "notes": "Yellow-zone fallback case with a paraphrased confirmation request.",
+      "execution_status": "success",
+      "raw_result": {
+        "contract": {
+          "schema_version": "1.0",
+          "intent": "vehicle.unlock_doors",
+          "risk_zone": "yellow",
+          "required_signals": {
+            "vehicle.speed_kmh": 0
+          },
+          "required_2fa": false,
+          "allowed_api_paths": [
+            "/api/vehicle/unlock_doors"
+          ],
+          "gui_fallback_policy": "challenge",
+          "postconditions": [
+            "(doors_locked value_is false)"
+          ],
+          "task_id": "veh_unlock_020",
+          "prompt": "Driver confirmed: pop the door locks right now.",
+          "metadata": {
+            "category": "vehicle",
+            "app": "vehicle"
+          }
+        },
+        "decision": {
+          "status": "allow",
+          "reason": "all_requirements_satisfied",
+          "checked_signals": {
+            "vehicle.speed_kmh": {
+              "expected": 0,
+              "actual": 0,
+              "passed": true
+            }
+          },
+          "missing_requirements": []
+        },
+        "route": "gui_fallback",
+        "elapsed_ms": 1132,
+        "execution_result": {
+          "status": "success",
+          "mode": "gui_only",
+          "gui_result": {
+            "status": "success"
+          }
+        }
+      }
+    }
+  ],
+  "api_gap_summary": {
+    "no_fallback": {
+      "runs": 7,
+      "success_rate": 0.0,
+      "mean_duration_ms": 0,
+      "median_duration_ms": 0,
+      "mean_time_to_first_action_ms": 0,
+      "mean_screenshot_count": 0,
+      "mean_vision_pixels": 0,
+      "peak_vram_mb": 134,
+      "fallback_invocation_rate": 0.0
+    },
+    "full_screen_fallback": {
+      "runs": 7,
+      "success_rate": 1.0,
+      "mean_duration_ms": 2306.8571428571427,
+      "median_duration_ms": 1157,
+      "mean_time_to_first_action_ms": 2306.8571428571427,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 2073600,
+      "peak_vram_mb": 134,
+      "fallback_invocation_rate": 1.0
+    },
+    "contract_scoped_fallback": {
+      "runs": 7,
+      "success_rate": 1.0,
+      "mean_duration_ms": 2340.285714285714,
+      "median_duration_ms": 1145,
+      "mean_time_to_first_action_ms": 2340.285714285714,
+      "mean_screenshot_count": 1,
+      "mean_vision_pixels": 153600,
+      "peak_vram_mb": 134,
+      "fallback_invocation_rate": 1.0
+    }
+  },
+  "comparison": {
+    "api_gap_success_gap_vs_full_screen": 0.0,
+    "api_gap_vision_pixel_reduction_vs_full_screen": 0.9259259259259259
+  },
+  "overall": "PASS"
+}

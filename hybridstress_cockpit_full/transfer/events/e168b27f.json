@@ -1,0 +1,68 @@
+{
+  "event_id": "e168b27f",
+  "task_id": "ho_media_radio_002",
+  "step_index": 2,
+  "pre_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_media_radio_002/pre_2.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/transfer/screenshots/ho_media_radio_002/hybrid_run0_post_2.png",
+  "action": "\u5207\u6362\u5230\u6536\u97f3\u673a\uff0c\u8c03\u81f3FM 103.9",
+  "postconditions": [
+    {
+      "subject": "source",
+      "relation": "value_is",
+      "object": "radio"
+    },
+    {
+      "subject": "radio_frequency",
+      "relation": "value_is",
+      "object": "103.9"
+    }
+  ],
+  "emulator_snapshot_id": "transfer_ho_media_radio_002_2",
+  "label": "consistent_pass",
+  "fault_type": "stale_observation",
+  "fault_severity": "moderate",
+  "timestamp_pre": 1775619332.8726532,
+  "timestamp_post": 1775619368.625568,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1381,
+      1381,
+      1383
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      576,
+      582,
+      583
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      9352,
+      9349,
+      9348
+    ]
+  }
+}

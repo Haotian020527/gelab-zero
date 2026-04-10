@@ -1,0 +1,68 @@
+{
+  "event_id": "9e8edc64",
+  "task_id": "set_bluetooth_018",
+  "step_index": 7,
+  "pre_screenshot_path": "hybridstress_cockpit_full/screenshots/set_bluetooth_018/pre_7.png",
+  "post_screenshot_path": "hybridstress_cockpit_full/screenshots/set_bluetooth_018/hybrid_run0_post_7.png",
+  "action": "\u5173\u95ed\u84dd\u7259",
+  "postconditions": [
+    {
+      "subject": "bluetooth_on",
+      "relation": "value_is",
+      "object": "false"
+    },
+    {
+      "subject": "bluetooth_status",
+      "relation": "value_is",
+      "object": "disabled"
+    }
+  ],
+  "emulator_snapshot_id": "switchpoint_set_bluetooth_018_7",
+  "label": "boundary_specific",
+  "fault_type": "state_rollback",
+  "fault_severity": "mild",
+  "timestamp_pre": 1775538486.2717218,
+  "timestamp_post": 1775538498.0898097,
+  "hybrid_result": {
+    "mode": "hybrid",
+    "run_outcomes": [
+      "failure",
+      "failure",
+      "failure"
+    ],
+    "majority_outcome": "failure",
+    "run_durations_ms": [
+      1083,
+      1080,
+      1083
+    ]
+  },
+  "api_only_result": {
+    "mode": "api_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      580,
+      586,
+      581
+    ]
+  },
+  "gui_only_result": {
+    "mode": "gui_only",
+    "run_outcomes": [
+      "success",
+      "success",
+      "success"
+    ],
+    "majority_outcome": "success",
+    "run_durations_ms": [
+      1660,
+      1671,
+      1677
+    ]
+  }
+}

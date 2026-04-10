@@ -1,0 +1,14 @@
+{
+  "stage": "sanity_cockpit",
+  "timestamp": "2026-04-07T12:06:15",
+  "checks": {
+    "data_structures": "PASS",
+    "fault_injector": "PASS",
+    "cockpit_server": "PASS",
+    "api_actions": "PASS",
+    "snapshot_determinism": "PASS",
+    "validators": "PASS",
+    "task_definitions": "PASS (3/3 pilots pass)"
+  },
+  "overall": "PASS"
+}
